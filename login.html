@@ -15,18 +15,21 @@
 
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="assets/css/responsiveLogin.css">
 
     <title>GOOHAUS</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
   </head>
 
   <body class="bg-pink p-0">
+
     <div class="container-fluid h-100">
       <div class="row h-100">
-
-        <div class="col-4">
-          <div class="d-flex flex-column justify-content-center align-items-center h-100">
+        
+        <!-------------------------------------------------------------------------------------------------------->
+        <!--Formulario de login-->
+        <div class="col-4" id="loginFormBox">
+          <div class="d-flex flex-column justify-content-center align-items-center h-100 col-sm-12">
 
             <article class="login">
 
@@ -67,8 +70,12 @@
             </article>
           </div>
         </div>
+        <!--End Formulario de login-->
+        <!-------------------------------------------------------------------------------------------------------->
         
-        <div class="col-8 bg-blue p-0">
+        <!-------------------------------------------------------------------------------------------------------->
+        <!--Columna solo informativa del login-->
+        <div class="col-8 bg-blue p-0" id="columnInfoLogin">
           <div class="sliderLogin" id="loginSlide">
             <div>
               <article class="sliderLogin__item cardMask cardMask--4" style="background-image: url('./assets/img/login.png')">
@@ -94,6 +101,9 @@
 
           </div>
         </div>
+        <!--End Columna solo informativa del login-->
+        <!-------------------------------------------------------------------------------------------------------->
+
       </div>
     </div>
 
