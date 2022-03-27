@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="assets/lib/fancybox/fancybox.css" rel="stylesheet">
+    <link href="assets/lib/bootstrap-slider/css/bootstrap-slider.min.css" rel="stylesheet">
+    <link href="assets/lib/slick/slick.css" rel="stylesheet">
+    <link href="assets/lib/slick/slick-theme.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+
+    <title>GOOHAUS</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  </head>
+
+  <body>
+    <header class="header">
+
+      <div class="container-fluid h-100">
+        <div class="row">
+
+          <div class="col-2">
+            <a href="index.html" class="header__logo trans d-flex align-items-center h-100">
+              <img src="assets/img/GH-horizontal.svg" alt="Logotipo GOOHAUS" class="header__logo__img img-fluid">
+            </a>
+          </div>
+          
+          <div class="col-10">
+            <div class="d-flex justify-content-end align-items-center h-100">
+              <nav class="header__primaryBtns btnGroup d-flex">
+                <a class="btn btn--primary" href="comprar.html">Comprar</a>
+                <a class="btn btn--secondary" href="vender.html">Vender</a>
+              </nav>
+
+              <div class="header__nav d-flex align-items-center">
+
+                <nav class="header__nav__primary d-lg-flex trans">
+                  <a href="context.html" class="header__nav__primary__item">Nosotros</a>
+                  <a href="cocreation.html" class="header__nav__primary__item">Tarífa Única</a>
+                  <a href="#" class="header__nav__primary__item">Calculadora</a>
+                  <a href="#" class="header__nav__primary__item">Blog</a>
+                </nav>
+
+                <nav class="header__nav__login btnGroup">
+                  <a href="register.html" class="btn btn--tertiary ">Crear cuenta</a>
+                  <a href="login.html" class="btn btn--tertiary ">Ingresar</a>
+                </nav>
+
+                <nav class="header__nav__rrss">
+                  <a href="" class="header__nav__rrss__item">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="" class="header__nav__rrss__item">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="" class="header__nav__rrss__item">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="" class="header__nav__rrss__item">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                  <a href="" class="header__nav__rrss__item">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </nav>
+
+                <a href="buscar.html" class="header__openSearch d-flex justify-content-center align-items-center" id="openSearch">
+                  <i class="bi bi-search"></i>
+                </a>
+
+              </div>
+                
+              <button type="button" class="navbarToggle">
+                <span class="navbarToggle__iconBar"></span>
+                <span class="navbarToggle__iconBar"></span>
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+      <div class="row">
+        <div class="col-4 offset-md-1 ">
+          <div class="arrowsTitle mt-40"></div>
+          <h3>Calculemos el precio de mercado de tu propiedad.</h3>
+          <h1 class="mb-40"><strong>Cotizador Goohaus</strong></h1>
+
+          <form action="" class="w-200 mb-40">
+            <div class="form-group mb-4">
+              <label for="direction">Dirección</label>
+              <input type="text" class="form-control bg-lightGray" id="direction" placeholder="Calle 1234, Comuna">
+            </div>
+
+            <div class="row">
+
+              <div class="form-group mb-4 col-6">
+                <label class="w-100">Tipo de propiedad</label>
+                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                <label class="btn btn--check" for="option1">Departamento</label>
+
+                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                <label class="btn btn--check" for="option2">Casa</label>
+              </div>
+
+
+              <div class="form-group mb-4 col-4">
+                <label class="w-100">Estacionamientos</label>
+                <input type="radio" class="btn-check" name="options" id="si-1" autocomplete="off" checked>
+                <label class="btn btn--check" for="si-1">Si</label>
+
+                <input type="radio" class="btn-check" name="options" id="no-1" autocomplete="off">
+                <label class="btn btn--check" for="no-1">No</label>
+
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="form-group mb-4 col-6">
+                <label for="m2-1">M² totales</label>
+                <input type="number" class="form-control bg-lightGray" id="m2-1" placeholder="Estimada">
+              </div>
+  
+              <div class="form-group mb-4 col-6">
+                <label for="m2-2">M² construidos</label>
+                <input type="number" class="form-control bg-lightGray" id="m2-2" placeholder="Estimada">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-group mb-4 col-6">
+                <label for="bathroom-2" class="mb-10">Baños</label>
+                <input id="bathroom-2" type="text"/>
+              </div>
+
+              <div class="form-group mb-4 col-6">
+                <label for="room-2" class="mb-10">Dormitorios</label>
+                <input id="room-2" type="text"/>
+              </div>
+            </div>
+
+            <a href="" class="btn btn--primary float-end">Continuar</a>
+
+          </form>
+
+        </div>
+        <div class="col-6 p-24 offset-md-1 mt-40">
+          <div class="search__map h-50">
+            <iframe class="h-100 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26638.96249601387!2d-70.62675944847435!3d-33.42662531995215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf7c6e8366f7%3A0x87effcc00a478d7c!2sProvidencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1645646264437!5m2!1ses!2scl" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+
+          <div class="col-12 mt-4">
+            <section class="fichaSavings mb-20">
+                <div class="row " style="--bs-gutter-x: 0rem;">
+                  <div class="col-4">
+                    <article class="bg-red t-white p-24 d-flex align-items-center justify-content-center h-100">
+                          <div>
+                            <h4>Cotización Goohaus de tu propiedad:</h4>
+                            <h3><strong>UF 10.000</strong></h3>
+
+                          </div>
+                    </article>
+                  </div>
+                  <div class="col-4">
+                    <article class="bg-pink t-blue p-24 d-flex align-items-center justify-content-center h-100">
+                      <div>
+                            <h5>Tarifa Goohaus:</h5>
+                            <h4><strong>$990.000</strong></h4>
+
+                            <h5>2% Tradicional:</h5>
+                            <h4><strong>$ 1.011.874</strong></h4>
+                          </div>
+                    </article>
+                  </div>
+                  <div class="col-4">
+                    <article class="bg-blue t-white p-24 d-flex align-items-center justify-content-center h-100">
+                          <div>
+                            <h4>Con Goohaus ahorras:</h4>
+                            <h3><strong>$21.874</strong></h3>
+                          </div>
+                    </article>
+                  </div>
+                </div>
+            </section>
+
+        </div>
+        </div>
+
+
+      </div>
+
+
+    <footer class="footer mb-0">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+            <section class="footer__primary d-flex justify-content-between">
+              <figure>
+                <img src="./assets/img/GH-horizontal.svg" alt="" class="img-fluid">
+              </figure>
+
+              <div class="d-flex flex-column">
+
+                <nav class="footer__primary__rrss mb-4">
+                  <a href="" class="footer__primary__rrss__item">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="" class="footer__primary__rrss__item">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="" class="footer__primary__rrss__item">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="" class="footer__primary__rrss__item">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                  <a href="" class="footer__primary__rrss__item">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </nav>
+
+                <nav class="footer__primary__nav d-lg-flex trans">
+                  <a href="context.html" class="footer__primary__nav__item">Home</a>
+                  <a href="cocreation.html" class="footer__primary__nav__item">Comprar</a>
+                  <a href="#" class="footer__primary__nav__item">Vender</a>
+                  <a href="#" class="footer__primary__nav__item">Nosotros</a>
+                  <a href="#" class="footer__primary__nav__item">Contacto</a>
+                </nav>
+
+              </div>
+            </section>
+          </div>
+
+          <div class="col-md-4">
+            <div class="footer__secondary h-100 d-flex flex-column justify-content-between">
+              <nav class="footer__secondary__nav">
+                <a href="#" class="footer__secondary__nav__item">Ayuda</a>
+                <a href="#" class="footer__secondary__nav__item">Términos y condiciones</a>
+                <a href="#" class="footer__secondary__nav__item">Código de ética</a>
+              </nav>
+
+              <small>GooHaus S.A. © 2020 - Todos los derechos reservado</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="assets/lib/fancybox/fancybox.umd.js"></script>
+    <script src="assets/lib/slick/slick.min.js"></script>
+    <script src="assets/lib/bootstrap-slider/js/bootstrap-slider.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>

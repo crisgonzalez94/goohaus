@@ -1,0 +1,704 @@
+    <!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="assets/lib/fancybox/fancybox.css" rel="stylesheet">
+    <link href="assets/lib/bootstrap-slider/css/bootstrap-slider.min.css" rel="stylesheet">
+    <link href="assets/lib/slick/slick.css" rel="stylesheet">
+    <link href="assets/lib/slick/slick-theme.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">  
+
+
+    <title>GOOHAUS</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  </head>
+
+  <body>
+    <header class="header">
+
+      <div class="container-fluid h-100">
+        <div class="row">
+
+          <div class="col-2">
+            <a href="index.html" class="header__logo trans d-flex align-items-center h-100">
+              <img src="assets/img/GH-horizontal.svg" alt="Logotipo GOOHAUS" class="header__logo__img img-fluid">
+            </a>
+          </div>
+          
+          <div class="col-10">
+            <div class="d-flex justify-content-end align-items-center h-100">
+              <nav class="header__primaryBtns btnGroup d-flex">
+                <a class="btn btn--primary" href="comprar.html">Comprar</a>
+                <a class="btn btn--secondary" href="vender.html">Vender</a>
+              </nav>
+
+              <div class="header__nav d-flex align-items-center">
+
+                <nav class="header__nav__primary d-lg-flex trans">
+                  <a href="context.html" class="header__nav__primary__item">¿Quiénes Somos?</a>
+                  <a href="cocreation.html" class="header__nav__primary__item">Conoce tu ahorro</a>
+                  <a href="#" class="header__nav__primary__item">Calcula tu venta</a>
+                  <a href="#" class="header__nav__primary__item">Blog</a>
+                </nav>
+
+                <nav class="header__nav__login btnGroup2">
+                  <a href="login.html" class="btn btn--tertiary ">Ingresar</a>
+                </nav>
+
+                <nav class="header__nav__rrss">
+                  <a href="" class="header__nav__rrss__item">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="" class="header__nav__rrss__item">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="" class="header__nav__rrss__item">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="" class="header__nav__rrss__item">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                  <a href="" class="header__nav__rrss__item">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </nav>
+
+              </div>
+                
+              <button type="button" class="navbarToggle">
+                <span class="navbarToggle__iconBar"></span>
+                <span class="navbarToggle__iconBar"></span>
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="position-relative">
+      <section class="container-fluid heroFicha">
+        <div class="row">
+          <div class="col-8">
+            <div class="heroFicha__title">
+              <h1><strong>Casa en Barrio Italia</strong></h1>
+              <h3 class="mb-0">Ñuñoa, Santiago</h3>
+            </div>
+          </div>
+  
+          <div class="col-2">
+            <div class="heroFicha__ctas text-end">
+              <a href="" class="btn btn--secondary mb-2">Ver Ahorro</a>
+              <a href="" class="btn btn--secondary mb-2">Calcular dividendo</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </div>
+
+    <section class="container-fluid mb-40">
+      <div class="heroFicha__slider" id="fichaSlide">
+
+        <div class="heroFicha__slider__slide">
+          <img src="./assets/img/slide-ficha-1.jpg" class="img-fluid" alt="">
+        </div>
+
+        <div class="heroFicha__slider__slide">
+          <img src="./assets/img/slide-ficha-1.jpg" class="img-fluid" alt="">
+        </div>
+
+      </div>
+    </section>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-9">
+
+          <nav class="fichaNav nav mb-40">
+            <a class="nav-link fichaNav__item active" aria-current="page" href="#">Características</a>
+            <a class="nav-link fichaNav__item" href="#">Descripción</a>
+            <a class="nav-link fichaNav__item" href="#">Más detalles</a>
+            <a class="nav-link fichaNav__item" href="#">Calcular dividendo</a>
+            <a class="nav-link fichaNav__item" href="#">Calcular ahorro</a>
+            <a class="nav-link fichaNav__item" href="#">Planes de mejora (Próximamente!)</a>
+          </nav>
+
+          <section class="fichaResume t-white mb-112" id="resume">
+            <div class="row">
+
+              <div class="col-5">
+                <article class="bg-blue p-24">
+                  <ul class="fichaResume__list list-unstyled mb-5">
+                    <li class="fichaResume__list__item fichaResume__list__item--rooms"><span>Dormitorios: <strong>2</strong></span></li>
+                    <li class="fichaResume__list__item fichaResume__list__item--bathroom"><span>Baños: <strong>1</strong></span></li>
+                    <li class="fichaResume__list__item fichaResume__list__item--m2"><span>Metros cuadrados: <strong>100 m<sup>2</sup></strong></span></li>
+                  </ul>
+                  <div class="mb-5">
+                    <select class="d-inline align-middle form-select form-select-sm form-select--border w-auto me-2" id="money">
+                      <option value="UF">UF</option>
+                      <option value="Peso">$</option>
+                    </select>
+                    <h2 class="d-inline align-middle">UF <strong>1234</strong></h2>
+                  </div>
+                  <h4>Avenida Italia  2084, Ñuñoa, Santiago</h4>
+                </article>
+              </div>
+
+              <div class="col-4">
+                <div class="fichaMap h-100">
+                  <iframe class="h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26638.96249601387!2d-70.62675944847435!3d-33.42662531995215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf7c6e8366f7%3A0x87effcc00a478d7c!2sProvidencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1645646264437!5m2!1ses!2scl" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <section class="fichaDescription mb-40" id="description">
+            <div class="row">
+              <div class="col-8 offset-md-1">
+                <h2 class="mb-4 arrowsTitle">Descripción</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+                <ul class="list-unstyled">
+                  <li>Gastos comunes aproximados: <strong>$100.000</strong></li>
+                  <li>Contribuciones aproximadas: <strong>$100.000</strong></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="fichaDetails mb-40" id="detail">
+            <div class="row">
+              <div class="col-4 offset-md-1">
+                <h2 class="mb-4">Más detalles</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 offset-md-1">
+                
+                <article class="bg-pink p-24 h-100">
+                  <ul class="list-unstyled mb-40">
+                    <li>Orientación: <strong>Nororiente</strong></li>
+                    <li>Pisos: <strong>2</strong></li>
+                    <li>Año construcción: <strong>1980</strong></li>
+                  </ul>
+
+                  <ul class="list-unstyled">
+                    <li>Metro <strong>(10 min)</strong></li>
+                    <li>Colegios <strong>(10 min)</strong></li>
+                    <li>Universidades <strong>(10 min)</strong></li>
+                    <li>Supermercado <strong>(10 min)</strong></li>
+                    <li>Clinicas <strong>(10 min)</strong></li>
+                    <li>Ciclovía <strong>(10 min)</strong></li>
+                  </ul>
+                </article>
+              </div>
+
+              <div class="col-7">
+                <article class="bg-gray p-24 h-100">
+                  <div class="d-flex mb-40">
+
+                    <ul class="list-unstyled fichaDetails__list">
+                      <li class="fichaDetails__list__item yes">Estacionamientos (2)</li>
+                      <li class="fichaDetails__list__item no">Bodega</li>
+                      <li class="fichaDetails__list__item yes">Gimnasio</li>
+                      <li class="fichaDetails__list__item yes">Piscina</li>
+                      <li class="fichaDetails__list__item yes">Piscina temperada</li>
+                      <li class="fichaDetails__list__item no">Alarmaa</li>
+                      <li class="fichaDetails__list__item yes">Ascensor (3)</li>
+                      <li class="fichaDetails__list__item yes">Walk-in clóset</li>
+                      <li class="fichaDetails__list__item yes">Calefacción Central</li>
+                    </ul>
+
+                    <ul class="list-unstyled fichaDetails__list">
+                      <li class="fichaDetails__list__item yes">Home Office</li>
+                      <li class="fichaDetails__list__item yes">Home Office</li>
+                      <li class="fichaDetails__list__item no">Home Office</li>
+                      <li class="fichaDetails__list__item yes">Home Office</li>
+                    </ul>
+                  </div>
+
+                  <p>¿Necesitas alguna característica que no esta en la lista? <br>
+                  Cuéntanos <a href=""><strong>aquí</strong></a> para ayudarte.</p>
+
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="fichaSavings mb-80 offset-md-1">
+            <div class="row">
+
+              <h2 class="mb-4">Calculemos <strong>tu ahorro</strong> con Goohaus</h2>
+              <p>Eliminamos el tradicional 2% y lo reemplazamos por una tarifa única según el valor de la propiedad.</p>
+
+
+              <div class="col-4">
+                <article class="bg-blue t-white p-24">
+                  <h4 class="mb-2">Valor de la propiedad</h4>
+                  <div class="mb-40">
+                    <select class="d-inline align-middle form-select form-select-sm form-select--border w-auto me-2" id="money">
+                      <option value="UF">UF</option>
+                      <option value="Peso">$</option>
+                    </select>
+                    <h2 class="d-inline align-middle">UF <strong>1234</strong></h2>
+                  </div>
+                  
+                  <div class="mb-3">
+                    <h4>Tarifa Goohaus:</h4>
+                    <h2><strong>$990.000</strong></h2>
+                  </div>
+
+                  <div>
+                    <h4>2% Tradicional:</h4>
+                    <h2 class="text-decoration-line-through"><strong>$ 1.011.874</strong></h2>
+                  </div>
+
+                </article>
+              </div>
+
+              <div class="col-4">
+                <article class="bg-red t-white p-24 d-flex align-items-center justify-content-center h-100">
+                  <div class="p-24">
+                    <h2>Con Goohaus ahorras:</h2>
+                    <h3 class="h1"><strong>$21.874</strong></h3>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="fichaDividend mb-80">
+            <div class="row">
+              <div class="col-8 offset-md-1">
+                <article class="dividend bg-pink">
+                  <h2 class="mb-5">Calculemos <strong>tu dividendo</strong></h2>
+                  <p>Verifica cuanto tendrías que pagar mensualmente para comprar esta propiedad.</p>
+                  <form action="">
+                    <div class="row">
+                      <h3 class="mb-3">Valor propiedad: <strong>1234</strong>UF</h3> 
+      
+                    </div>
+      
+                    <div class="row">
+      
+                      <div class="col-6">
+                        <div class="form-group mb-3">
+                          <label for="percent">Pie (%)</label>
+                          <input id="percent" type="text"/>
+                        </div>
+                      </div>
+      
+                      <div class="col-6">
+                        <div class="form-group mb-3">
+                          <label for="time">Plazo (Años)</label>
+                          <input id="time" type="text"/>
+                        </div>
+                      </div>
+      
+                    </div>
+      
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="form-group mb-3">
+                          <label for="DFL2">DFL2</label>
+                          <div class="row">
+                            <div class="col-2">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="DFL2" id="yes" value="si" checked>
+                                <label class="form-check-label" for="yes">
+                                  Sí
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="DFL2" id="no" value="no">
+                                <label class="form-check-label" for="no">
+                                  No
+                                </label>
+                              </div>
+                            </div>     
+                          </div>  
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="row">
+      
+                      <div class="col">
+                        <div class="form-group mb-3">
+                          <label for="nombre1">Nombre</label>
+                          <input type="text" class="form-control" id="nombre1" placeholder="Nombre">
+                        </div>
+                      </div>
+      
+                      <div class="col">
+                        <div class="form-group mb-3">
+                          <label for="email1">Email</label>
+                          <input type="email" class="form-control" id="email1" placeholder="nombre@email.com">
+                        </div>
+                      </div>
+      
+                    </div>
+      
+                    <div class="row justify-content-end">
+                      <div class="col-3">
+                        <button class="btn btn--primary mt-3 float-end" type="submit">Calcular</button>
+                      </div>
+                    </div>
+      
+                  </form>
+      
+                  <div class="row mt-2">
+                    <div class="col">
+                      <h4 class="mb-4">Resultado:</h4>
+      
+                      <span>Valor Cuota</span>
+                      <h2>$<strong>300.000</strong></h2>
+                    </div>
+      
+                    <div class="col">
+                      <h4 class="mb-4">Gastos operacionales:</h4>
+      
+                      <small>Gastos generales</small>
+                      <h4 class="mb-2"><strong>30</strong>UF</h4>
+      
+                      <small>Impuestos al muto</small>
+                      <h4 class="mb-2">$<strong>300.000</strong></h4>
+      
+                      <small>Conservador vienes raices</small>
+                      <h4>$<strong>300.000</strong></h4>
+      
+                    </div>
+                    
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="properties mb-80">
+            <div class="container-fluid">
+              <div class="row">
+
+                <div class="col-2 offset-md-1">
+                  <img src="./assets/img/arrow-3.svg" alt="">
+                </div>
+
+                <div class="col-9">
+
+                  <h2 class="mb-4">También te <strong>puede interesar:</strong></h2>
+
+                  <div class="row">
+
+                    <div class="col-4">
+                      <article class="card card--prop mb-4">
+                        <div class="card__slide mb-2">
+                          <div class="card__slide__items" id="houseSlide-1">
+                            <img src="./assets/img/casa-1.png" class="img-fluid" alt="">
+                            <img src="./assets/img/casa-2.png" class="img-fluid" alt="">
+                            <img src="./assets/img/casa-3.png" class="img-fluid" alt="">
+                          </div>
+                          <div class="card__slide__nav">
+                            <div class="card__slide__nav__left" id="houseSlide-1-left">
+                              <i class="bi bi-arrow-left-short"></i>
+                            </div>
+                            <div class="card__slide__nav__right" id="houseSlide-1-right">
+                              <i class="bi bi-arrow-right-short"></i>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card__title mb-4">
+                          <h3 class="t-regular">Barrio El Aguilucho</h3>
+                          <h4>Providencia, Santiago</h4>
+                        </div>
+
+                        <ul class="card__caract mb-4">
+                          <li class="card__caract__item card__caract__item--rooms">2</li>
+                          <li class="card__caract__item card__caract__item--bathroom">1</li>
+                          <li class="card__caract__item card__caract__item--m2">100 m<sup>2</sup></li>
+                        </ul>
+
+                        <div class="card__price d-flex align-items-center mb-4">
+                          <select class="form-select form-select--border card__price__select" id="money">
+                            <option value="UF">UF</option>
+                            <option value="Peso">$</option>
+                          </select>
+                          <h3>UF <strong>1234</strong></h3>
+                        </div>
+
+                        <a href="ficha.html" class="btn btn--primary t-regular">Ver propiedad</a>
+
+                      </article>
+                    </div>
+
+                    <div class="col-4">
+                      <article class="card card--prop mb-4">
+                        <div class="card__slide mb-2">
+                          <div class="card__slide__items" id="houseSlide-2">
+                            <img src="./assets/img/casa-3.png" class="img-fluid" alt="">
+                            <img src="./assets/img/casa-2.png" class="img-fluid" alt="">
+                            <img src="./assets/img/casa-1.png" class="img-fluid" alt="">
+                          </div>
+                          <div class="card__slide__nav">
+                            <div class="card__slide__nav__left" id="houseSlide-2-left">
+                              <i class="bi bi-arrow-left-short"></i>
+                            </div>
+                            <div class="card__slide__nav__right" id="houseSlide-2-right">
+                              <i class="bi bi-arrow-right-short"></i>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card__title mb-4">
+                          <h3 class="t-regular">Barrio El Aguilucho</h3>
+                          <h4>Providencia, Santiago</h4>
+                        </div>
+
+                        <ul class="card__caract mb-4">
+                          <li class="card__caract__item card__caract__item--rooms">2</li>
+                          <li class="card__caract__item card__caract__item--bathroom">1</li>
+                          <li class="card__caract__item card__caract__item--m2">100 m<sup>2</sup></li>
+                        </ul>
+
+                        <div class="card__price d-flex align-items-center mb-4">
+                          <select class="form-select form-select--border card__price__select" id="money">
+                            <option value="UF">UF</option>
+                            <option value="Peso">$</option>
+                          </select>
+                          <h3>UF <strong>1234</strong></h3>
+                        </div>
+
+                        <a href="ficha.html" class="btn btn--primary t-regular">Ver propiedad</a>
+
+                      </article>
+                    </div>
+
+                    <div class="col-4">
+                      <article class="card card--prop mb-4">
+                        <div class="card__slide mb-2">
+                          <div class="card__slide__items" id="houseSlide-3">
+                            <img src="./assets/img/casa-3.png" class="img-fluid" alt="">
+                            <img src="./assets/img/casa-2.png" class="img-fluid" alt="">
+                            <img src="./assets/img/casa-1.png" class="img-fluid" alt="">
+                          </div>
+                          <div class="card__slide__nav">
+                            <div class="card__slide__nav__left" id="houseSlide-3-left">
+                              <i class="bi bi-arrow-left-short"></i>
+                            </div>
+                            <div class="card__slide__nav__right" id="houseSlide-3-right">
+                              <i class="bi bi-arrow-right-short"></i>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card__title mb-4">
+                          <h3 class="t-regular">Barrio El Aguilucho</h3>
+                          <h4>Providencia, Santiago</h4>
+                        </div>
+
+                        <ul class="card__caract mb-4">
+                          <li class="card__caract__item card__caract__item--rooms">2</li>
+                          <li class="card__caract__item card__caract__item--bathroom">1</li>
+                          <li class="card__caract__item card__caract__item--m2">100 m<sup>2</sup></li>
+                        </ul>
+
+                        <div class="card__price d-flex align-items-center mb-4">
+                          <select class="form-select form-select--border card__price__select" id="money">
+                            <option value="UF">UF</option>
+                            <option value="Peso">$</option>
+                          </select>
+                          <h3>UF <strong>1234</strong></h3>
+                        </div>
+
+                        <a href="ficha.html" class="btn btn--primary t-regular">Ver propiedad</a>
+
+                      </article>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="row mb-80 offset-md-1">
+            <h2 class="mb-5"> <strong>Próximamente...</strong></h2>
+            <div class="col-6">
+              <article class="cardMask cardMask--3 mb-n80" style="background-image: url('./assets/img/img-mask-1.jpg');">
+                <div class="cardMask__text">
+                  <h3 class="mb-4">Te aconsejamos con</h3>
+                  <h2 class="mb-4 h1"><strong>diseño y arquitectura</strong></h2>
+                  <h3>en el caso de querer acomodar tu nuevo hogar.</h3>
+                </div>
+              </article>
+            </div>
+            <div class="col-5 offset-md-1">
+              <h2>Planes de <strong>mejoras</strong>!</h2>
+              <h4 class="mb-4">Podrás remodelar:</h4>
+
+              <div class="row improvementPlans__list">
+                
+                <div class="col-6">
+                  <article class="improvementPlans__list__item bg-pink d-flex flex-column align-items-center mb-4">
+                    <h3 class="mb-1">Baños</h3>
+                    <img src="./assets/img/ico-bano.svg" alt="">
+                  </article>
+                </div>
+
+                <div class="col-6">
+                  <article class="improvementPlans__list__item bg-pink d-flex flex-column align-items-center mb-4">
+                    <h3 class="mb-1">Pisos</h3>
+                    <img src="./assets/img/ico-pisos.svg" alt="">
+                  </article>
+                </div>
+                
+                <div class="col-6">
+                  <article class="improvementPlans__list__item bg-pink d-flex flex-column align-items-center mb-4">
+                    <h3 class="mb-1">Cocina</h3>
+                    <img src="./assets/img/ico-cocinas.svg" alt="">
+                  </article>
+                </div>
+
+                <div class="col-6">
+                  <article class="improvementPlans__list__item bg-pink d-flex flex-column align-items-center mb-4">
+                    <h3 class="mb-1">Iluminación</h3>
+                    <img src="./assets/img/ico-lamp.svg" alt="">
+                  </article>
+                </div>
+               <a href="" class="btn btn--primary mb-2">¡Haz click aquí y te avisaremos cuando esté disponible!</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-3 ">
+          <aside class="fichaAside sticky-top">
+            <article class="bg-pink p-24">
+              <h3 class="mb-4"><strong>¡Me interesa!</strong></h3>
+              <div class="row ">
+                <a href="agenda.html" class="btn btn--primary mb-2">Agendar visita</a>
+              </div>
+              <div class="row">
+                <a href="" class="btn btn--primary mb-2">Guardar en Favoritos</a>
+              </div>
+              <div class="row">
+                <a href="ofertar.html" class="btn btn--primary mb-2">¡Ofertar!</a>
+              </div>
+            </article>
+
+            <h3 class="mb-3 mt-3">¿Por qué <strong>GOOHAUS</strong>?</h3>
+
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-center">
+                <img src="./assets/img/ico-idea-blue.svg" alt="" class="me-2" style="max-width:10%;">
+                <h5>Decisiones informadas</h5>
+              </li>
+
+              <li class="d-flex align-items-center">
+                <img src="./assets/img/ico-savings-blue.svg" alt="" class="me-2" style="max-width:10%;">
+                <h5 >Tarifa única, la mas baja del mercado</h5>
+              </li>
+
+              <li class="d-flex align-items-center">
+                <img src="./assets/img/ico-conections-blue.svg" alt="" class="me-2" style="max-width:10%;">
+                <h5>Evita el desfase, no mas intermediarios</h5>
+              </li>
+
+              <li class="d-flex align-items-center">
+                <img src="./assets/img/ico-asesor-blue.svg" alt="" class="me-2" style="max-width:10%;">
+                <h5>Acompañamiento con ejecutivos capacitados</h5>
+              </li>
+            </ul>
+          </aside> 
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="footer" style="margin:0px;">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+            <section class="footer__primary d-flex justify-content-between">
+              <figure>
+                <img src="./assets/img/GH-horizontal.svg" alt="" class="img-fluid">
+              </figure>
+
+              <div class="d-flex flex-column">
+
+                <nav class="footer__primary__rrss mb-4">
+                  <a href="" class="footer__primary__rrss__item">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="" class="footer__primary__rrss__item">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="" class="footer__primary__rrss__item">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="" class="footer__primary__rrss__item">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                  <a href="" class="footer__primary__rrss__item">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </nav>
+
+                <nav class="footer__primary__nav d-lg-flex trans">
+                  <a href="context.html" class="footer__primary__nav__item">Servicios</a>
+                  <a href="cocreation.html" class="footer__primary__nav__item">Contacto</a>
+                  <a href="#" class="footer__primary__nav__item">Nosotros</a>
+                  <a href="#" class="footer__primary__nav__item">Blog</a>
+                </nav>
+
+              </div>
+            </section>
+          </div>
+
+          <div class="col-md-4">
+            <div class="footer__secondary h-100 d-flex flex-column justify-content-between">
+              <nav class="footer__secondary__nav">
+                <a href="#" class="footer__secondary__nav__item">Ayuda</a>
+                <a href="#" class="footer__secondary__nav__item">Términos y condiciones</a>
+                <a href="#" class="footer__secondary__nav__item">Código de ética</a>
+              </nav>
+
+              <small>GooHaus S.A. © 2020 - Todos los derechos reservado</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+
+    <!-- JS -->
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="assets/lib/fancybox/fancybox.umd.js"></script>
+    <script src="assets/lib/slick/slick.min.js"></script>
+    <script src="assets/lib/bootstrap-slider/js/bootstrap-slider.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>

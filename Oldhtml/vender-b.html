@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="assets/lib/fancybox/fancybox.css" rel="stylesheet">
+    <link href="assets/lib/bootstrap-slider/css/bootstrap-slider.min.css" rel="stylesheet">
+    <link href="assets/lib/slick/slick.css" rel="stylesheet">
+    <link href="assets/lib/slick/slick-theme.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">  
+
+
+    <title>GOOHAUS</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  </head>
+
+  <body>
+    <header class="header">
+
+      <div class="container-fluid h-100">
+        <div class="row">
+
+          <div class="col-2">
+            <a href="index.html" class="header__logo trans d-flex align-items-center h-100">
+              <img src="assets/img/GH-horizontal.svg" alt="Logotipo GOOHAUS" class="header__logo__img img-fluid">
+            </a>
+          </div>
+          
+          <div class="col-10">
+            <div class="d-flex justify-content-end align-items-center h-100">
+              <nav class="header__primaryBtns btnGroup d-flex">
+                <a class="btn btn--primary" href="comprar.html">Comprar</a>
+                <a class="btn btn--secondary" href="vender.html">Vender</a>
+              </nav>
+
+              <div class="header__nav d-flex align-items-center">
+
+                <nav class="header__nav__primary d-lg-flex trans">
+                  <a href="context.html" class="header__nav__primary__item">Servicios</a>
+                  <a href="cocreation.html" class="header__nav__primary__item">Contacto</a>
+                  <a href="#" class="header__nav__primary__item">Nosotros</a>
+                  <a href="#" class="header__nav__primary__item">Blog</a>
+                </nav>
+
+                <nav class="header__nav__login btnGroup">
+                  <a href="register.html" class="btn btn--tertiary ">Crear cuenta</a>
+                  <a href="login.html" class="btn btn--tertiary ">Ingresar</a>
+                </nav>
+
+                <nav class="header__nav__rrss">
+                  <a href="" class="header__nav__rrss__item">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="" class="header__nav__rrss__item">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="" class="header__nav__rrss__item">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="" class="header__nav__rrss__item">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                  <a href="" class="header__nav__rrss__item">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </nav>
+
+                <a href="" class="header__openSearch d-flex justify-content-center align-items-center" id="openSearch">
+                  <i class="bi bi-search"></i>
+                </a>
+
+              </div>
+                
+              <button type="button" class="navbarToggle">
+                <span class="navbarToggle__iconBar"></span>
+                <span class="navbarToggle__iconBar"></span>
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container-fluid h-100">
+        <div class="row">
+
+          <div class="col-5 offset-md-1">
+            <article class="mt-80">
+              <h1><strong>Si quieres vender</strong></h1>
+              <h2><strong>Hacemos simple</strong> lo complejo</h2>
+            </article>
+          </div>
+
+          <div class="col-4 offset-md-1 mt-96 subtitle mb-5">
+            <h2 class="arrowsTitle"><strong>Nuestros</strong> planes</h2>
+            <div class="d-flex align-items-center">
+              <div class="d-flex justify-content-center align-items-center">
+                <img class="subtitle__img" src="./assets/img/ico-casa-2.svg" alt="">
+                <h4 class="subtitle__text">Tarifa plana</h4>
+              </div>
+              
+              <span class="subtitle__plus">+</span>
+              <div class="d-flex justify-content-center align-items-center">
+                <img class="subtitle__img" src="./assets/img/ico-brocha.svg" alt="">
+                <h4 class="subtitle__text">Planes de mejora</h4>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="plans mb-5">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-4">
+            
+            <div class="cardMask cardMask--1" style="background-image: url('./assets/img/img-mask-1.jpg');">
+              <div class="cardMask__text">
+                <h2 class="mb-4">Olvidate de las comisiones</h2>
+                <h3>Paga una tarifa plana una vez que vendamos tu propiedad</h3>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-5">
+            <article class="cardPlan mb-3">
+              <div class="cardPlan__title">
+                <h3>Propiedades</h3>
+                <h2><strong>Hasta 5.000 UF</strong></h2>
+              </div>
+              <div class="cardPlan__price">
+                <h2 class="cardPlan__price__number">$ 990.000</h2>
+              </div>
+            </article>
+
+
+            <article class="cardPlan mb-3">
+              <div class="cardPlan__title">
+                <h3>Propiedades</h3>
+                <h2><strong>5.001 a 10.000 UF</strong></h2>
+              </div>
+              <div class="cardPlan__price">
+                <h2 class="cardPlan__price__number">$ 990.000</h2>
+              </div>
+            </article>
+
+            <article class="cardPlan mb-3">
+              <div class="cardPlan__title">
+                <h3>Propiedades</h3>
+                <h2><strong>Sobre 10.000 UF</strong></h2>
+              </div>
+              <div class="cardPlan__price">
+                <h2 class="cardPlan__price__number">$ 990.000</h2>
+              </div>
+            </article>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="saving mb-5">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-2 offset-md-1">
+            <img src="./assets/img/arrow-3.svg" class="mt-n32" alt="" >
+          </div>
+  
+          <div class="col-5">
+            <article class="saving__calculator mt-5 bg-gray">
+              <div class="saving__calculator__top">
+                <h2>Di GOO al <strong>ahorro</strong></h2>
+                <h4 class="mb-3">Ingresa el valor en UF o mueve la barra</h4>
+
+                <form action="">
+                  <label for="uf">Valor propiedad</label>
+                  <input id="uf" type="text"/><br/>
+                  <div class="row mb-3 mt-3 justify-content-end">
+                    <div class="col-4">
+                      <div class="input-group ">
+                        <input type="text" class="form-control">
+                        <span class="input-group-text">UF</span>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+
+                <h3 class="text-end">
+                  <span>52.667.700 CLP</span> 
+                </h3>
+              </div>
+              <div class="saving__calculator__bottom bg-blue d-flex justify-content-between">
+                <div>
+                  <h4>Con nosotros paga</h4>
+                  <h2><strong>$990.000</strong></h2>
+                </div>
+    
+                <div>
+                  <h4>Con otros paga</h4>
+                  <h2><strong>$ 1.011.874</strong></h2>
+                </div>
+              </div>
+            </article>
+          </div>
+    
+          <div class="col-3">
+            <img src="./assets/img/arrow-2.svg" alt="" class="mt-80 mb-3">
+            <article class="saving__result bg-red d-flex justify-content-center flex-column">
+              <h2>Elige Goohaus y ahorra:</h2>
+              <h3 class="h1"><strong>$21.874</strong></h3>
+            </article>
+          </div>
+  
+        </div>
+      </div>
+
+
+
+    </section>
+
+    <section class="container-fluid">
+      <div class="row">
+
+        <div class="col-4 offset-md-1 photosPro">
+          <h2>Di GOO a <strong>fotos pro</strong>!</h2>
+          <h4 class="mb-4">Te sacamos unas fotos pro con cualquiera de nuestras tarifas</h4>
+
+          <div class="photosPro_list row" data-masonry='{"percentPosition": true }'>
+            <div class="col-6">
+              <img src="./assets/img/fotos-pro.jpg" alt="" class="img-fluid mb-4">
+            </div>
+            <div class="col-6">
+              <img src="./assets/img/fotos-pro.jpg" alt="" class="img-fluid mb-4">
+            </div>
+            <div class="col-6">
+              <img src="./assets/img/fotos-pro.jpg" alt="" class="img-fluid mb-4">
+            </div>
+            <div class="col-6">
+              <img src="./assets/img/fotos-pro.jpg" alt="" class="img-fluid mb-4">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <img src="./assets/img/arrow-4.svg" alt="" class="img-fluid mt-40">
+        </div> 
+
+        <div class="col-4 improvementPlans mt-112">
+          <h2>Planes de <strong>mejoras</strong>!</h2>
+          <h4 class="mb-4">¡Ademas si quieres suma uno de nuestros planes de mejora!</h4>
+
+          <div class="row improvementPlans__list" data-masonry='{"percentPosition": true }'>
+            
+            <div class="col-6">
+              <article class="improvementPlans__list__item bg-pink d-flex flex-column align-items-center mb-4">
+                <h3 class="mb-1">Baños</h3>
+                <img src="./assets/img/ico-bano.svg" alt="">
+              </article>
+            </div>
+
+            <div class="col-6">
+              <article class="improvementPlans__list__item bg-pink d-flex flex-column align-items-center mb-4">
+                <h3 class="mb-1">Baños</h3>
+                <img src="./assets/img/ico-bano.svg" alt="">
+              </article>
+            </div>
+            
+            <div class="col-6">
+              <article class="improvementPlans__list__item bg-pink d-flex flex-column align-items-center mb-4">
+                <h3 class="mb-1">Baños</h3>
+                <img src="./assets/img/ico-bano.svg" alt="">
+              </article>
+            </div>
+
+            <div class="col-6">
+              <article class="improvementPlans__list__item bg-pink d-flex flex-column align-items-center mb-4">
+                <h3 class="mb-1">Baños</h3>
+                <img src="./assets/img/ico-bano.svg" alt="">
+              </article>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <div class="row">
+
+        <div class="col-4 offset-md-2">
+          <article class="cardMask cardMask--2" style="background-image: url('./assets/img/img-mask-1.jpg');">
+            <div class="cardMask__text">
+              <h2 class="mb-4">Ocupa tu <strong>agenda web</strong></h2>
+              <h3>Muestra tu vivienda según tu conevniecia y recibe ofertas</h3>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-4 offset-md-2">
+          <article class="marketValue mt-112">
+            <h2 class="arrowsTitle mb-4"><strong>Conoce el valor del mercado</strong></h2>
+            <div class="row">
+              <div class="col-6">
+                <img src="./assets/img/fotos-pro.jpg" alt="" class="img-fluid mb-3">
+                <h3 class="mb-3">Compara con otras viviendas tu sector.</h3>
+                <a href="" class="btn btn--secondary">Ir a tazador</a>
+              </div>
+              <div class="col-6">
+                <img src="./assets/img/arrow-5.svg" alt="" class="mb-3 mt-3 marketValue__arrow">
+                <img src="./assets/img/fotos-pro.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-3 offset-md-5">
+          <article class="cardDocument mt-5">
+            <figure class="cardDocument__img">
+              <img src="./assets/img/ico-docs-2.svg" alt="">
+            </figure>
+            <div>
+              <h2><strong>¡Y obvio!</strong></h2>
+              <h3>Olvida el papeleo</h3>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-2">
+          <div class="d-flex h-100 flex-column justify-content-end">
+            <h4>Te acompañamos de principio a fin! <br>
+              <strong>La redacción de la promesa va por nuestra cuenta.</strong>
+            </h4>
+            <h2 class="c-red"><strong>Es gratis!</strong></h2>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+          <img src="./assets/img/arrow-3.svg" alt="" class="mt-n80">
+        </div>
+        <div class="col-5">
+
+          <form action="" class="bg-pink form mt-40 mb-80">
+            <h2 class="mb-4"><strong>¿Hablamos?</strong></h2>
+
+            <div class="form-group mb-3">
+              <label for="nombre">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Primer nombre">
+            </div>
+
+            <div class="form-group mb-3">
+              <label for="apellido">Apellido</label>
+              <input type="text" class="form-control" id="apellido" placeholder="Apellido paterno">
+            </div>
+
+            <div class="form-group mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="ejemplo@email.com">
+            </div>
+
+            <div class="form-group mb-3">
+              <label for="Telefono">Telefono</label>
+              <input type="tel" class="form-control" id="Telefono" placeholder="+569 1234 5678">
+            </div>
+
+            <div class="d-flex justify-content-end">
+              <button type="submit" class="btn btn--primary">Enviar</button>
+            </div>
+
+            
+
+  
+          </form>
+
+          <div class="news offset-md-2">
+
+            <h2 class="mb-4">¡Descubre las <strong>tendencias</strong> con GOOHAUS!</h2>
+
+            <article class="card card--newsHor bg-gray mb-4">
+              <figure class="card--newsHor__card__img card__img">
+                <img src="./assets/img/blog.jpg" alt="" class="img-fluid">
+              </figure>
+              <div class="card__info">
+                <span class="card__info__tag">Tips</span>
+                <h4 class="card__info__title">Cómo calcular el costo de un crédito</h4>
+                <a class="card__info__btn" href="">
+                  <i class="bi bi-arrow-right-short"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="card card--newsHor bg-gray mb-4">
+              <figure class="card--newsHor__card__img card__img">
+                <img src="./assets/img/blog.jpg" alt="" class="img-fluid">
+              </figure>
+              <div class="card__info">
+                <span class="card__info__tag">Tips</span>
+                <h4 class="card__info__title">Cómo calcular el costo de un crédito</h4>
+                <a class="card__info__btn" href="">
+                  <i class="bi bi-arrow-right-short"></i>
+                </a>
+              </div>
+            </article>
+
+            <a href="" class="btn btn--secondary float-end">
+              Ir al blog
+            </a>
+
+          </div>
+        </div>
+
+        <div class="col-4 offset-md-1">
+          <h2 class="mt-120 mb-5">Ademas publicamos en <strong>los mejores portales:</strong></h2>
+          <div class="row">
+
+            <div class="col-6">
+              <article class="portals__item d-flex justify-content-center align-items-center mb-4">
+                <img src="./assets/img/logo-toctoc.jpg" alt="" class="img-fluid portals__item__img">
+              </article>
+            </div>
+
+            <div class="col-6">
+              <article class="portals__item d-flex justify-content-center align-items-center mb-4">
+                <img src="./assets/img/home_yapo_logo.png" alt="" class="img-fluid portals__item__img">
+              </article>
+            </div>
+
+            <div class="col-6">
+              <article class="portals__item d-flex justify-content-center align-items-center mb-4">
+                <img src="./assets/img/portal-inmobilario.png" alt="" class="img-fluid portals__item__img">
+              </article>
+            </div>
+
+            <div class="col-6">
+              <article class="portals__item d-flex justify-content-center align-items-center mb-4">
+                <img src="./assets/img/logo-toctoc.jpg" alt="" class="img-fluid portals__item__img">
+              </article>
+            </div>
+
+            <div class="col-6">
+              <article class="portals__item d-flex justify-content-center align-items-center mb-4">
+                <img src="./assets/img/home_yapo_logo.png" alt="" class="img-fluid portals__item__img">
+              </article>
+            </div>
+
+            <div class="col-6">
+              <article class="portals__item d-flex justify-content-center align-items-center mb-4">
+                <img src="./assets/img/portal-inmobilario.png" alt="" class="img-fluid portals__item__img">
+              </article>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+
+    <footer class="footer">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+            <section class="footer__primary d-flex justify-content-between">
+              <figure>
+                <img src="./assets/img/GH-horizontal.svg" alt="" class="img-fluid">
+              </figure>
+
+              <div class="d-flex flex-column">
+
+                <nav class="footer__primary__rrss mb-4">
+                  <a href="" class="footer__primary__rrss__item">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="" class="footer__primary__rrss__item">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="" class="footer__primary__rrss__item">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="" class="footer__primary__rrss__item">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                  <a href="" class="footer__primary__rrss__item">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </nav>
+
+                <nav class="footer__primary__nav d-lg-flex trans">
+                  <a href="context.html" class="footer__primary__nav__item">Servicios</a>
+                  <a href="cocreation.html" class="footer__primary__nav__item">Contacto</a>
+                  <a href="#" class="footer__primary__nav__item">Nosotros</a>
+                  <a href="#" class="footer__primary__nav__item">Blog</a>
+                </nav>
+
+              </div>
+            </section>
+          </div>
+
+          <div class="col-md-4">
+            <div class="footer__secondary h-100 d-flex flex-column justify-content-between">
+              <nav class="footer__secondary__nav">
+                <a href="#" class="footer__secondary__nav__item">Ayuda</a>
+                <a href="#" class="footer__secondary__nav__item">Términos y condiciones</a>
+                <a href="#" class="footer__secondary__nav__item">Código de ética</a>
+              </nav>
+
+              <small>GooHaus S.A. © 2020 - Todos los derechos reservado</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <section class="timeline bg-blue d-flex align-items-center">
+
+      <div class="d-flex align-items-center timeline__list h-100">
+        <h5 class="timeline__title">¡Te acompañamos <strong>siempre</strong>!</h5>
+
+        <div class="timeline__list__item">
+          <h6>Crea tu perfil de vendedor</h6>
+        </div>
+  
+        <div class="timeline__list__item">
+          <h6>Mejora tu propiedad</h6>
+        </div>
+  
+        <div class="timeline__list__item">
+          <h6>Recibe interesados</h6>
+        </div>
+  
+        <div class="timeline__list__item">
+          <h6>Firma promesa de compra venta</h6>
+        </div>
+  
+        <div class="timeline__list__item">
+          <h6>Tramites bancarios</h6>
+        </div>
+  
+        <div class="timeline__list__item">
+          <h6>Firma escritura</h6>
+        </div>
+  
+        <div class="timeline__list__item">
+          <h6>Inscipción en bienes raices</h6>
+        </div>
+      </div>
+
+      <div class="timeline__actions bg-gray h-100 d-flex justify-content-between">
+        <a href="" class="btn btn--primary">
+          Ir al formulario
+        </a>
+        <a href="" class="btn btn--tertiary btn--icon">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+      </div>
+
+      
+
+    </section>
+
+    <!-- JS -->
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="assets/lib/fancybox/fancybox.umd.js"></script>
+    <script src="assets/lib/slick/slick.min.js"></script>
+    <script src="assets/lib/bootstrap-slider/js/bootstrap-slider.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>

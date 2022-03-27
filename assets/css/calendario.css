@@ -1,0 +1,54 @@
+@media (max-width:575px) {
+    .display-4 {
+        font-size: 1.5rem;
+    }
+    .day h5 {
+        background-color: #f8f9fa;
+        padding: 3px 5px 5px;
+        margin: -8px -8px 8px -8px;
+    }
+    .date {
+        padding-left: 4px;
+    }
+}
+
+@media (min-width: 576px) {
+    .day {
+        height: 14.2857vw;
+    }
+}
+
+.dayTitle{
+
+}
+
+.day{
+
+}
+
+.event{
+    max-width: 100%;
+    height: 40%;
+    background: #262B44;
+    border-radius: 5px;
+    display: block;
+    color: white;
+    margin-bottom: 5%;
+}
+.event:active{
+    background: #D2232A;
+    color: white;
+}
+.event:hover{
+    background: #D2232A;
+    color: white;
+}
+
+.eventTitle{
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.eventHours{
+    text-align: center;
+}

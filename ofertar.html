@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="assets/lib/fancybox/fancybox.css" rel="stylesheet">
+    <link href="assets/lib/bootstrap-slider/css/bootstrap-slider.min.css" rel="stylesheet">
+    <link href="assets/lib/slick/slick.css" rel="stylesheet">
+    <link href="assets/lib/slick/slick-theme.css" rel="stylesheet">
+    <link href="assets/lib/calendar/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+
+    <title>GOOHAUS</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  </head>
+
+  <body>
+    <header class="header">
+
+      <div class="container-fluid h-100">
+        <div class="row">
+
+          <div class="col-2">
+            <a href="index.html" class="header__logo trans d-flex align-items-center h-100">
+              <img src="assets/img/GH-horizontal.svg" alt="Logotipo GOOHAUS" class="header__logo__img img-fluid">
+            </a>
+          </div>
+          
+          <div class="col-10">
+            <div class="d-flex justify-content-end align-items-center h-100">
+              <nav class="header__primaryBtns btnGroup d-flex">
+                <a class="btn btn--primary" href="comprar.html">Comprar</a>
+                <a class="btn btn--secondary" href="vender.html">Vender</a>
+              </nav>
+
+              <div class="header__nav d-flex align-items-center">
+
+                <nav class="header__nav__primary d-lg-flex trans">
+                  <a href="context.html" class="header__nav__primary__item">¿Quiénes Somos?</a>
+                  <a href="cocreation.html" class="header__nav__primary__item">Conoce tu ahorro</a>
+                  <a href="#" class="header__nav__primary__item">Calcula tu venta</a>
+                  <a href="#" class="header__nav__primary__item">Blog</a>
+                </nav>
+
+                <nav class="header__nav__login btnGroup2">
+                  <a href="login.html" class="btn btn--tertiary ">Ingresar</a>
+                </nav>
+
+                <nav class="header__nav__rrss">
+                  <a href="" class="header__nav__rrss__item">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="" class="header__nav__rrss__item">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="" class="header__nav__rrss__item">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="" class="header__nav__rrss__item">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                  <a href="" class="header__nav__rrss__item">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </nav>
+
+                <a href="buscar.html" class="header__openSearch d-flex justify-content-center align-items-center" id="openSearch">
+                  <i class="bi bi-search"></i>
+                </a>
+
+              </div>
+                
+              <button type="button" class="navbarToggle">
+                <span class="navbarToggle__iconBar"></span>
+                <span class="navbarToggle__iconBar"></span>
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <section class="container-fluid">
+      <ol class="stepper mb-40">
+        <li class="stepper__item current">
+          <span class="stepper__item__number">01</span>
+          <h4>Oferta un monto</h4>
+        </li>
+        <li class="stepper__item ">
+          <span class="stepper__item__number">02</span>
+          <h4>Oferta realizada</h4>
+        </li>
+
+      </ol>
+    </section>
+
+    <section class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-4">
+          <h3 class="mb-4">Propiedad a ofertar</h3>
+          <article class="card card--prop mb-4">
+            <div class="card__slide mb-2">
+                          <div class="card__slide__items" id="houseSlide-2">
+                            <img src="./assets/img/casa-3.png" class="img-fluid" alt="">
+                            <img src="./assets/img/casa-2.png" class="img-fluid" alt="">
+                            <img src="./assets/img/casa-1.png" class="img-fluid" alt="">
+                          </div>
+                          <div class="card__slide__nav">
+                            <div class="card__slide__nav__left" id="houseSlide-2-left">
+                              <i class="bi bi-arrow-left-short"></i>
+                            </div>
+                            <div class="card__slide__nav__right" id="houseSlide-2-right">
+                              <i class="bi bi-arrow-right-short"></i>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card__title mb-4">
+                          <h3 class="t-regular">Barrio El Aguilucho</h3>
+                          <h4>Providencia, Santiago</h4>
+                        </div>
+
+                        <ul class="card__caract mb-4">
+                          <li class="card__caract__item card__caract__item--rooms">2</li>
+                          <li class="card__caract__item card__caract__item--bathroom">1</li>
+                          <li class="card__caract__item card__caract__item--m2">100 m<sup>2</sup></li>
+                        </ul>
+
+                        <div class="card__price d-flex align-items-center mb-4">
+                          <select class="form-select form-select--border card__price__select" id="money">
+                            <option value="UF">UF</option>
+                            <option value="Peso">$</option>
+                          </select>
+                          <h3>UF <strong>1234</strong></h3>
+                        </div>
+                      </article>
+        </div>
+
+        <div class="col-4">
+          <h3 class="mb-4">Realizar Oferta</h3>
+          <h4 class="mb-2">Para ofertar a esta propiedad, debes ingresar un valor en UF en el cuadro a continuación. </h4>
+          <h4 class="mb-4">Recuerda que debes hacer ofertas serias y coherentes con las características de la propiedad que estas ofertando*.</h4>
+          <form action="" class="register__form mb-3">
+            <input type="number" class="form-control  register__form__input" id="oferta" placeholder="Ingresa oferta en UF">
+            <a href="ofertar-2.html" class="btn btn--primary ">Realizar oferta</a>
+          </form>
+
+          <h5 class="mb-2">*Si no sabes un valor a ofertar, puedes usar nuestra calculadora para tener una referencia haciendo click <a href="cotizador.html" ">aquí</a> </h5>
+
+        </div>
+
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <a href="ficha.html" class="btn btn--tertiary float-start">Volver</a>
+
+        </div>
+        
+      </div>
+    </section>
+
+    <footer class="footer mb-0">  
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+            <section class="footer__primary d-flex justify-content-between">
+              <figure>
+                <img src="./assets/img/GH-horizontal.svg" alt="" class="img-fluid">
+              </figure>
+
+              <div class="d-flex flex-column">
+
+                <nav class="footer__primary__rrss mb-4">
+                  <a href="" class="footer__primary__rrss__item">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="" class="footer__primary__rrss__item">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="" class="footer__primary__rrss__item">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="" class="footer__primary__rrss__item">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                  <a href="" class="footer__primary__rrss__item">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </nav>
+
+                <nav class="footer__primary__nav d-lg-flex trans">
+                  <a href="context.html" class="footer__primary__nav__item">Servicios</a>
+                  <a href="cocreation.html" class="footer__primary__nav__item">Contacto</a>
+                  <a href="#" class="footer__primary__nav__item">Nosotros</a>
+                  <a href="#" class="footer__primary__nav__item">Blog</a>
+                </nav>
+
+              </div>
+            </section>
+          </div>
+
+          <div class="col-md-4">
+            <div class="footer__secondary h-100 d-flex flex-column justify-content-between">
+              <nav class="footer__secondary__nav">
+                <a href="#" class="footer__secondary__nav__item">Ayuda</a>
+                <a href="#" class="footer__secondary__nav__item">Términos y condiciones</a>
+                <a href="#" class="footer__secondary__nav__item">Código de ética</a>
+              </nav>
+
+              <small>GooHaus S.A. © 2020 - Todos los derechos reservado</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/lib/fancybox/fancybox.umd.js"></script>
+    <script src="assets/lib/slick/slick.min.js"></script>
+    <script src="assets/lib/bootstrap-slider/js/bootstrap-slider.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/lib/calendar/main.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>

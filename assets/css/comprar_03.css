@@ -1,0 +1,402 @@
+/*El anterior programador puso un pading top en el body... en main.css se lo voy a sacar*/
+
+body{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.divider{
+    width: 100%;
+    height: 50px;
+}
+
+.mainContainer{
+    margin-bottom: 100px;
+}
+
+#sidebarUser{
+    background: #dfdce3;
+    margin-top: 0px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0px;
+}
+
+#mainLogo{
+    margin-top: 20px;
+}
+
+#mainLogoImg{
+    width: 90%;
+}
+
+.logoutAndProfilePictureContainer{
+    margin-top: 20px;
+    text-align: left;
+}
+
+#profilePicture{
+    width: 50px;
+    border-radius: 50px;
+}
+
+#profileName{
+    font-size: 20px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#logoutLink{
+    color: red;
+    font-size: 12px;
+    margin-top: 0;
+    padding: 0;
+}
+
+/*---------------------------------------------------------------------------*/
+.sidebarToolsContainer{
+    margin-top: 30px;
+}
+
+.sidebarTools{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+.sidebarTools li{
+    text-align: left;
+}
+.sidebarTools li a{
+    color: black;
+}
+.sidebarToolsTextLarge{
+    font-size: 13px;
+}
+
+.btnSidebar{
+    position: absolute;
+    font-size: 12px;
+    bottom: 30px;
+    width: 200px;
+    left: calc(50% - 100px);
+}
+
+#btnPortalDeComprador{
+    margin-top: 25px;
+    font-size: 15px;
+    float: left;
+}
+.selectDivisa{
+    margin-top: 25px;
+    width: 70px;
+    float: left;
+    border: 1px solid black;
+    margin-left: 10px;
+    height: 32px;
+}
+#btnNotification{
+    margin-top: 23px;
+    margin-left: 10px;
+    font-size: 40px;
+    border: none;
+    background: none;
+}
+
+/*------------------------------------------------------------------*/
+/*Pasos*/
+
+.stepper__item__number{
+    background: none;
+    border: 2px solid red;
+    color: red;
+    font-weight: 600    ;
+}
+
+.stepperText{
+    font-size: 14px;
+    font-weight: 600;
+}
+.stepper__item__paragraph{
+    max-width: 120px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/*--------------------------------------------------*/
+
+
+/*Propiedades de ventas*/
+.propiedadesDeVenta{
+    margin-top: 50px;
+    position: relative;
+}
+
+.checkPropiedadesDeVenta{
+    position: absolute;
+    background: white;
+    padding-right: 5px;
+    top: 0px;
+    z-index: 2;
+}
+.checkPropiedadesDeVenta i{
+    color: red;
+}
+.checkPropiedadesDeVenta span{
+    font-size: 13px;
+}
+
+/*----------------------------------------------------*/
+.imgPropiedadesDeVentaCarousel{
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 5px;
+}
+
+
+/*img de las propiedades de ventas*/
+.imgPropiedadesDeVenta{
+    width: 150px;
+    z-index: 1;
+}
+
+/*Botones del carousel*/
+.imgPropiedadesDeVentaPrevButton , .imgPropiedadesDeVentaNextButton{
+    position: absolute;
+    top: 145px; 
+    
+    background: white;
+    opacity: 100%;
+    height: 20px;
+    width: 20px;
+    z-index: 2;
+    color: black;
+}
+.imgPropiedadesDeVentaPrevButton{ left: 110px; }
+.imgPropiedadesDeVentaNextButton{left: 130px;}
+
+.propiedadesDeVentasTitulo{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.propiedadesDeVentasLocales{
+    margin-top: 20px;
+}
+.propiedadesDeVentasLocalesImg{
+    width: 15px;
+}
+.propiedadesDeVentasLocalesText{
+    margin-right: 15px;
+}
+.preciosContainerPropiedadesDeVentas{
+    margin-top: 20px;
+}
+.precioPropiedadesDeVenta{
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+
+.tarifasContainerPropiedadesDeVentas{
+    margin-top: 25px;
+    text-align: left;
+}
+
+.tarifaSmallText{
+    font-size: 11px;
+}
+.tarifaPrice{
+    font-weight: 800;
+    font-size: 15px;
+    margin-top: 5px;
+}
+/*End de ventas*/
+/*--------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------*/
+/*Promimamente*/
+.proximamenteImgContainer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #262a43;
+    position: relative;
+}
+.proximamenteImg{
+    position: absolute;
+    height: 350px;
+    bottom: 0;
+    right: 0;
+}
+
+.proximamenteImgText{
+    color: white;
+    margin-left: 25px;
+}
+.proximamenteImgPrecio{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/*BoxHouseContent*/
+.boxHouseContents{
+    width: 350px;
+}
+.boxHouseContent{
+    background: #fff3f5;
+    width: 125px;
+    height: 125px;
+    float: left;
+    text-align: center;
+    margin: 15px;
+}
+.boxHouseContentTitle{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 550;
+}
+
+/*End BoxHouseContent*/
+
+/*Proximas citas*/
+.proximaCitaContainer{
+    width: calc(100% - 15px);
+    height: 100px;
+    background: #fff3f5;
+    margin-bottom: 15px;
+}
+.proximasCitasDate{
+    width: 100px;
+    min-height: 100px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    background: #262a43;
+    color: white;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    margin-right: 15px;
+}
+.numberDate{
+    margin-bottom: 2px;    
+}
+.proximasCitasLink{
+    margin-right: 5px;
+    text-decoration: underline;
+}
+
+/*-----------------------------------*/
+/*Tu casa ideal*/
+.tuCasaIdealContainer{
+    width: 100%;
+    height: 300px;
+    background: #fff3f5;
+}
+
+.formularioTuCasaIdeal{
+    width: 300px;
+    height: 150px;
+    margin-bottom: 10px;
+    color: white;
+    background: #262a43;
+    position: relative;
+}
+
+.tuCasaIdealImg{
+    height: 150px;
+}
+
+.tuCasaIdealText{
+    position: absolute;
+    width: 120px;
+    right: 20px;
+    top: 20px;
+}
+
+
+
+.btnFormularioTuCasaIdeal{
+    color: white;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/*Calculadora de dividendo*/
+.calculadoraDividendo{
+    background: #fff3f5;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding: 15px;
+}
+
+/*---------------------------------------------*/
+/*lineaDeTiempo*/
+/*Dentro de la linea de tiempo tenemos (lineaDeTiempoSection) que es una separacion de las 12
+luego (lineaDeTiempoLine que es la linea) y luego el texto*/
+.lineaDeTiempo{
+    height: 100px;
+    text-align: center;
+}
+.lineaDeTiempoSectionActive{
+    width: 8.3%;
+    float: left;
+    position: relative;
+}
+.lineaDeTiempoSectionActive .lineaDeTiempoLine{
+    border-bottom: 3px solid red;
+}
+.lineaDeTiempoSectionActive::after{
+    display: block;
+    content: '';
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: red;
+    position: absolute;
+    top: 43px;
+    left: 100%;
+    z-index: 2;
+}
+.lineaDeTiempoSection{
+    width: 8.3%;
+    float: left;
+    position: relative;
+}
+.lineaDeTiempoSection .lineaDeTiempoLine{
+    border-bottom: 3px solid grey;
+}
+.lineaDeTiempoSection::after{
+    display: block;
+    content: '';
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: grey;
+    position: absolute;
+    top: 43px;
+    left: 100%;
+}
+
+.lineaDeTiempoLine{
+    width: 100%;
+    height: 50px;
+}
+.lineaDeTiempoTexto{
+    font-size: 12px;
+    font-weight: 550;
+    line-height: 1;
+    min-height: 45px;
+    padding: 10px;
+    text-align:left;
+}
+
+
