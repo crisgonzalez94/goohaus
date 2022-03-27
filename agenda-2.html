@@ -18,12 +18,66 @@
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
 
+    <!--Responsive del navbar-->
+    <link rel="stylesheet" href="assets/css/responsiveHeader.css">
 
     <title>GOOHAUS</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
   </head>
 
   <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light responsiveHeader">
+      <div class="container-fluid">
+        <!--------------------------------------------------------------------->
+        <!--Imagen de pagina in inicial-->
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/GH-horizontal.svg" alt="Logotipo GOOHAUS" class="imgResponsiveHeader">
+        </a>
+        <!--End Imagen de pagina in inicial-->
+        <!--------------------------------------------------------------------->
+
+        <!--------------------------------------------------------------------------------->
+        <!--Booton de desplegar menu header-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--End Booton de desplegar menu header-->
+        <!--------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------->
+        <!--Menu colapsable-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <nav class="header__primaryBtns btnGroup d-flex btnComprarVenderResponsiveHeader">
+                <a class="btn btn--primary" href="comprar.html">Comprar</a>
+                <a class="btn btn--secondary" href="vender.html">Vender</a>
+              </nav>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">¿Quienes Somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Conoce tu ahorro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Calcula tu venta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#"><i class="bi bi-person-fill"></i>Ingresar</a>
+            </li>
+          </ul>
+        </div>
+        <!--End Menu colapsable-->
+        <!--------------------------------------------------------------------------------->
+        
+      </div>
+    </nav>
+
+
     <header class="header">
 
       <div class="container-fluid h-100">

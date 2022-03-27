@@ -1,0 +1,27 @@
+/*Este documento ajusta de manera responsive el Header en las páginas que lo usen*/
+@media (max-width: 1000px) {
+  /*Header Desktop quedará desabilitado*/
+  .header{
+    display: none;
+  }
+  /*El anterior desarrollador puso margenes en el body... lo quitare en responsive*/
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*Habilitamos el Header Responsive*/
+  .responsiveHeader{
+    background: #FFF3F4;
+  }
+
+  .imgResponsiveHeader{
+    max-width: 120px;
+  }
+}
+
+@media (min-width: 1001px){
+  .responsiveHeader{
+    display: none;
+  }
+}
