@@ -18,12 +18,77 @@
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
 
+    <!--Responsive del navbar-->
+    <link rel="stylesheet" href="assets/css/responsiveHeader.css">
+    <!--Responsive Footer-->
+    <link rel="stylesheet" href="assets/css/responsiveFooter.css">
 
     <title>GOOHAUS</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
   </head>
 
   <body>
+
+
+    <!--------------------------------------------------------------------------------------------------------->
+    <!--Responsive Header-->
+    <nav class="navbar navbar-expand-lg navbar-light responsiveHeader">
+      <div class="container-fluid">
+        <!--------------------------------------------------------------------->
+        <!--Imagen de pagina in inicial-->
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/GH-horizontal.svg" alt="Logotipo GOOHAUS" class="imgResponsiveHeader">
+        </a>
+        <!--End Imagen de pagina in inicial-->
+        <!--------------------------------------------------------------------->
+
+        <!--------------------------------------------------------------------------------->
+        <!--Booton de desplegar menu header-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--End Booton de desplegar menu header-->
+        <!--------------------------------------------------------------------------------->
+        
+        <!--------------------------------------------------------------------------------->
+        <!--Menu colapsable-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <nav class="header__primaryBtns btnGroup d-flex btnComprarVenderResponsiveHeader">
+                <a class="btn btn--primary" href="comprar.html">Comprar</a>
+                <a class="btn btn--secondary" href="vender.html">Vender</a>
+              </nav>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="context.html">¿Quienes Somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="cocreation.html">Conoce tu ahorro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Calcula tu venta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Blog</a>
+            </li>
+            <!--Login-->
+            <li class="nav-item">
+              <a class="nav-link active" href="login.html"><i class="bi bi-person-fill"></i>Ingresar</a>
+            </li>
+            <!--End Login-->
+          </ul>
+        </div>
+        <!--End Menu colapsable-->
+        <!--------------------------------------------------------------------------------->
+        
+      </div>
+    </nav>
+    <!--End Responsive Header-->
+    <!--------------------------------------------------------------------------------------------------------->
+    
+    <!--------------------------------------------------------------------------------------------------------->
+    <!--Desktop Header-->
     <header class="header">
 
       <div class="container-fluid h-100">
@@ -89,6 +154,8 @@
         </div>
       </div>
     </header>
+    <!--End Desktop Header-->
+    <!--------------------------------------------------------------------------------------------------------->
 
 
     <section class="container-fluid">
@@ -171,7 +238,9 @@
       </div>
     </section>
 
-    <footer class="footer mb-0">  
+    <!------------------------------------------------------------------------------------->
+    <!--Desktop Footer-->
+    <footer class="footer mb-0 desktopFooter">  
 
       <div class="container-fluid">
         <div class="row">
@@ -227,6 +296,79 @@
       </div>
 
     </footer>
+    <!--End Desktop Footer-->
+    <!------------------------------------------------------------------------------------->
+    
+
+
+    <!------------------------------------------------------------------------------------->
+    <!--Responsive Footer-->
+    <footer class="container-fluid responsiveFooter">
+      <!----------------------------------------------------------------------->
+      <!--Footer Pink-->
+      <div class="row footerPink">
+        <!--Logo-->
+        <div class="col-md-12">
+          <img src="./assets/img/GH-horizontal.svg" alt="" class="footerLogo">
+        </div>
+        <!--End logo-->
+        <!--Redes Sociales-->
+        <div class="col-md-12">
+          <div class="row footerLinksBox">
+            <div class="col-md-12">
+              <!--Instagram-->
+              <a href="" class="footerSocialLink"><i class="bi bi-instagram"></i></a>
+              <!--Facebook-->
+              <a href="" class="footerSocialLink"><i class="bi bi-facebook"></i></a>
+              <!--Linkdin-->
+              <a href="" class="footerSocialLink"><i class="bi bi-linkedin"></i></a>
+              <!--YouTube-->
+              <a href="" class="footerSocialLink"><i class="bi bi-youtube"></i></a>
+              <!--Twitter-->
+              <a href="" class="footerSocialLink"><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+          <div class="row footerLinksBox">
+            <div class="col-md-12">
+              <!--Servicios-->
+              <a href="" class="footerLink">Servicios</a>
+              <!--Contacto-->
+              <a href="" class="footerLink">Contacto</a>
+              <!--Nosotros-->
+              <a href="" class="footerLink">Nosotros</a>
+              <!--Blog-->
+              <a href="" class="footerLink">Blog</a>
+            </div>
+          </div>
+        </div>
+        <!--End Redes Sociales-->
+      </div>
+      <!--End Footer Pink-->
+      <!----------------------------------------------------------------------->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row footerLinksBox">
+            <div class="col-md-12">
+              <!--Ayuda-->
+              <a href="" class="footerLink">Ayuda</a>
+              <!--Terminos y condiciones-->
+              <a href="" class="footerLink">Términos y condiciones</a>
+              <!--Código de ética-->
+              <a href="" class="footerLink">Código de ética</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----------------------------------------------------------------------->
+      <!--CopyRight-->
+      <div class="row">
+        <small>GooHaus S.A. © 2020 - Todos los derechos reservado</small>
+      </div>
+      <!--End CopyRight-->
+      <!----------------------------------------------------------------------->
+    </footer>
+    <!--End Responsive Footer-->
+    <!------------------------------------------------------------------------------------->
 
     <!-- JS -->
     <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
