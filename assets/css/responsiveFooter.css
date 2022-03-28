@@ -1,0 +1,48 @@
+/*Este documento ajusta de manera responsive el Footer en las páginas que lo usen*/
+footer{
+  margin-top: 50px 0;
+  margin-bottom: 0;
+  text-align: center;
+  color: black;
+}
+.footerPink{
+  background:  #FFF3F4;
+}
+.footerLogo{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+}
+.footerLinksBox{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.footerSocialLink{
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 30px;
+}
+.footerLink{
+  color: black;
+  margin: 10px;
+  padding-top: 10px;
+}
+
+@media (max-width: 620px) {
+  .responsiveFooter{
+    display: inline;
+  }
+  .desktopFooter{
+    display: none;
+  }
+}
+
+@media (min-width: 621px){
+  .responsiveFooter{
+    display: none;
+  }
+  .desktopFooter{
+    display: inline;
+  }
+}
