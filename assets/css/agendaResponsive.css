@@ -1,7 +1,8 @@
-.agenda2HourLabel{
+.agendaHourLabel{
   padding: 5px;
 }
 .botonesAtrasContinuarBox{
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -13,7 +14,7 @@
 }
 
 @media (max-width: 500px) {
-  .agenda2SteepsBox{
+  .agendaSteepsBox{
     padding: 0;
     margin: 0;
   }
