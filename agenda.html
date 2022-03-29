@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="assets/css/responsiveHeader.css">
     <!--Responsive Footer-->
     <link rel="stylesheet" href="assets/css/responsiveFooter.css">
+    <!--Css Responsive-->
+    <link rel="stylesheet" href="assets/css/agendaResponsive.css">
 
     <title>GOOHAUS</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
@@ -156,8 +158,9 @@
     <!--------------------------------------------------------------------------------------------------------->
 
 
-
-    <section class="container-fluid">
+    <!----------------------------------------------------------------------------------------->
+    <!--Steeeps-->
+    <section class="container-fluid agendaSteepsBox">
       <ol class="stepper mb-40">
         <li class="stepper__item current">
           <span class="stepper__item__number">01</span>
@@ -173,40 +176,43 @@
         </li> 
       </ol>
     </section>
+    <!--End Steeeps-->
+    <!----------------------------------------------------------------------------------------->
+    
 
     <section class="container-fluid">
       <div class="row justify-content-center">
-        <div class="col-8">
+        <div class="col-md-8">
 
           <form action="" class="w-100 mb-40">
             <div class="row">
-              <div class="form-group col-4 mb-4">
+              <div class="form-group col-md-4 mb-4">
                 <label for="nombre">Nombre</label>
                 <input type="text" class="form-control bg-lightGray" id="nombre" placeholder="Tu nombre">
               </div>
                 
-              <div class="form-group col-4 mb-4">
+              <div class="form-group col-md-4 mb-4">
                 <label for="lastname">Apellido</label>
                 <input type="text" class="form-control bg-lightGray" id="lastname" placeholder="Tu apellido">
               </div>
 
-              <div class="form-group col-4 mb-4">
+              <div class="form-group col-md-4 mb-4">
                 <label for="rut">RUT</label>
                 <input type="text" class="form-control bg-lightGray" id="rut" placeholder="12.345.678-9">
               </div>
             </div>
             <div class="row">
-              <div class="form-group col-6 mb-4">
+              <div class="form-group col-md-6 mb-4">
                 <label for="nombre">Email</label>
                 <input type="email" class="form-control bg-lightGray" id="email" placeholder="mail@email.com">
               </div>
-              <div class="form-group col-6 mb-4">
+              <div class="form-group col-md-6 mb-4">
                 <label for="nombre">Teléfono</label>
                 <input type="phone" class="form-control bg-lightGray" id="email" placeholder="+56 9 1234 5678">
               </div>
             </div>
             <div class="row mt-40">
-              <div class="col-8">
+              <div class="col-md-8">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                   <label class="form-check-label" for="flexCheckDefault">
@@ -220,7 +226,7 @@
                   </label>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4">
                 <a href="agenda-2.html" class="btn btn--primary btn--lg float-end">Continuar</a>
               </div>
             </div>
