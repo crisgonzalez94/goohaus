@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="assets/css/responsiveHeader.css">
     <!--Responsive Footer-->
     <link rel="stylesheet" href="assets/css/responsiveFooter.css">
+    <!--Css Responsive-->
+    <link rel="stylesheet" href="assets/css/agenda2Responsive.css">
 
     <title>GOOHAUS</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
@@ -157,8 +159,9 @@
     <!--------------------------------------------------------------------------------------------------------->
     
 
-
-    <section class="container-fluid">
+    <!----------------------------------------------------------------------------------------->
+    <!--Steeeps-->
+    <section class="container-fluid agenda2SteepsBox">
       <ol class="stepper mb-40">
         <li class="stepper__item check">
           <span class="stepper__item__number">
@@ -176,10 +179,14 @@
         </li> 
       </ol>
     </section>
+    <!--End Steeeps-->
+    <!----------------------------------------------------------------------------------------->
 
+    <!----------------------------------------------------------------------------------------->
+    <!--Calendar-->
     <section class="container-fluid">
       <div class="row justify-content-center">
-        <div class="col-4">
+        <div class="col-md-4 col-sm-7">
           <h3 class="mb-4 text-center">Día</h3>
           <div class="calendar calendar-first" id="calendar_first">
 				    <div class="calendar_header">
@@ -191,39 +198,39 @@
 				    <div class="calendar_content"></div>
 					</div>
         </div>
-        <div class="col-3 offset-md-1">
+        <div class="col-md-2 col-sm-3 offset-md-1">
           <div class="row mb-40">
             <div class="col-6">
               <h3 class="mb-4 text-center">Hora A.M.</h3>
 
               <div class="mb-3">
                 <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                <label class="btn btn--check w-100 w-100" for="option2">09:00</label>
+                <label class="btn btn--check w-100 w-100 agenda2HourLabel" for="option2">09:00</label>
               </div>
 
               <div class="mb-3">
                 <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                <label class="btn btn--check w-100" for="option2">09:30</label>
+                <label class="btn btn--check w-100 agenda2HourLabel" for="option2">09:30</label>
               </div>
 
               <div class="mb-3">
                 <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                <label class="btn btn--check w-100" for="option2">10:00</label>
+                <label class="btn btn--check w-100 agenda2HourLabel" for="option2">10:00</label>
               </div>
 
               <div class="mb-3">
                 <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                <label class="btn btn--check w-100" for="option2">10:30</label>
+                <label class="btn btn--check w-100 agenda2HourLabel" for="option2">10:30</label>
               </div>
 
               <div class="mb-3">
                 <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                <label class="btn btn--check w-100" for="option2">11:00</label>
+                <label class="btn btn--check w-100 agenda2HourLabel" for="option2">11:00</label>
               </div>
 
               <div class="mb-3">
                 <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                <label class="btn btn--check w-100" for="option2">11:30</label>
+                <label class="btn btn--check w-100 agenda2HourLabel" for="option2">11:30</label>
               </div>
               
             </div>
@@ -233,37 +240,37 @@
 
               <div class="mb-3">
                 <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                <label class="btn btn--check w-100" for="option2">12:00</label>
+                <label class="btn btn--check w-100 agenda2HourLabel" for="option2">12:00</label>
               </div>
 
               <div class="mb-3">
                 <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                <label class="btn btn--check w-100" for="option2">12:30</label>
+                <label class="btn btn--check w-100 agenda2HourLabel" for="option2">12:30</label>
               </div>
 
               <div class="mb-3">
                 <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                <label class="btn btn--check w-100" for="option2">17:00</label>
+                <label class="btn btn--check w-100 agenda2HourLabel" for="option2">17:00</label>
               </div>
 
               <div class="mb-3">
                 <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                <label class="btn btn--check w-100" for="option2">17:30</label>
+                <label class="btn btn--check w-100 agenda2HourLabel" for="option2">17:30</label>
               </div>
 
               <div class="mb-3">
                 <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                <label class="btn btn--check w-100" for="option2">18:00</label>
+                <label class="btn btn--check w-100 agenda2HourLabel" for="option2">18:00</label>
               </div>
 
               <div class="mb-3">
                 <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                <label class="btn btn--check w-100" for="option2">18:30</label>
+                <label class="btn btn--check w-100 agenda2HourLabel" for="option2">18:30</label>
               </div>
 
               <div class="mb-3">
                 <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                <label class="btn btn--check w-100" for="option2">19:00</label>
+                <label class="btn btn--check w-100 agenda2HourLabel" for="option2">19:00</label>
               </div>
               
             </div>
@@ -271,14 +278,14 @@
         </div>
       </div>
 
-      <div class="row justify-content-center">
+      <div class="row justify-content-center botonesAtrasContinuarBox">
         <div class="col-8">
           <a href="agenda.html" class="btn btn--tertiary btn--lg float-start">Volver</a>
           <a href="agenda-3.html" class="btn btn--primary btn--lg float-end">Continuar</a>
         </div>
-        
       </div>
     </section>
+
 
     
     <!------------------------------------------------------------------------------------->
