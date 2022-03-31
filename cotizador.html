@@ -21,6 +21,8 @@
     <!--Responsive Footer-->
     <link rel="stylesheet" href="assets/css/responsiveFooter.css">
 
+    <link rel="stylesheet" href="assets/css/cotizadorResponsive.css">
+
     <title>GOOHAUS</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
   </head>
@@ -154,12 +156,16 @@
     </header>
     <!--End Desktop Header-->
     <!--------------------------------------------------------------------------------------------------------->
+    
+    <div class="container-fluid">
+      <div class="row" style="margin-bottom: 30px;">
 
-      <div class="row">
-        <div class="col-4 offset-md-1 ">
+        <!-------------------------------------------------------------------------------------------->
+        <!--Formulario-->
+        <div class="col-md-3 col-sm-10 offset-sm-1 offset-md-1 ">
           <div class="arrowsTitle mt-40"></div>
           <h3>Calculemos el precio de mercado de tu propiedad.</h3>
-          <h1 class="mb-40"><strong>Cotizador Goohaus</strong></h1>
+          <h1 class="mb-40" id="cotizadorTitle"><strong>Cotizador Goohaus</strong></h1>
 
           <form action="" class="w-200 mb-40">
             <div class="form-group mb-4">
@@ -169,7 +175,7 @@
 
             <div class="row">
 
-              <div class="form-group mb-4 col-6">
+              <div class="form-group mb-4 col-md-12">
                 <label class="w-100">Tipo de propiedad</label>
                 <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
                 <label class="btn btn--check" for="option1">Departamento</label>
@@ -179,7 +185,7 @@
               </div>
 
 
-              <div class="form-group mb-4 col-4">
+              <div class="form-group mb-4 col-md-12">
                 <label class="w-100">Estacionamientos</label>
                 <input type="radio" class="btn-check" name="options" id="si-1" autocomplete="off" checked>
                 <label class="btn btn--check" for="si-1">Si</label>
@@ -192,24 +198,24 @@
 
 
             <div class="row">
-              <div class="form-group mb-4 col-6">
+              <div class="form-group mb-4 col-md-6">
                 <label for="m2-1">M² totales</label>
                 <input type="number" class="form-control bg-lightGray" id="m2-1" placeholder="Estimada">
               </div>
   
-              <div class="form-group mb-4 col-6">
+              <div class="form-group mb-4 col-md-6">
                 <label for="m2-2">M² construidos</label>
                 <input type="number" class="form-control bg-lightGray" id="m2-2" placeholder="Estimada">
               </div>
             </div>
 
             <div class="row">
-              <div class="form-group mb-4 col-6">
+              <div class="form-group mb-4 col-md-12 col-sm-12">
                 <label for="bathroom-2" class="mb-10">Baños</label>
                 <input id="bathroom-2" type="text"/>
               </div>
 
-              <div class="form-group mb-4 col-6">
+              <div class="form-group mb-4 col-md-12 col-sm-12">
                 <label for="room-2" class="mb-10">Dormitorios</label>
                 <input id="room-2" type="text"/>
               </div>
@@ -220,7 +226,11 @@
           </form>
 
         </div>
-        <div class="col-6 p-24 offset-md-1 mt-40">
+        <!--End Formulario-->
+        <!-------------------------------------------------------------------------------------------->
+
+        <!-------------------------------------------------------------------------------------------->
+        <div class="col-md-7 offset-md-0 col-sm-10 offset-sm-1 p-24 mt-40">
           <div class="search__map h-50">
             <iframe class="h-100 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26638.96249601387!2d-70.62675944847435!3d-33.42662531995215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf7c6e8366f7%3A0x87effcc00a478d7c!2sProvidencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1645646264437!5m2!1ses!2scl" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
@@ -228,7 +238,7 @@
           <div class="col-12 mt-4">
             <section class="fichaSavings mb-20">
                 <div class="row " style="--bs-gutter-x: 0rem;">
-                  <div class="col-4">
+                  <div class="col-4 squareUnderMap">
                     <article class="bg-red t-white p-24 d-flex align-items-center justify-content-center h-100">
                           <div>
                             <h4>Cotización Goohaus de tu propiedad:</h4>
@@ -237,7 +247,7 @@
                           </div>
                     </article>
                   </div>
-                  <div class="col-4">
+                  <div class="col-4 squareUnderMap">
                     <article class="bg-pink t-blue p-24 d-flex align-items-center justify-content-center h-100">
                       <div>
                             <h5>Tarifa Goohaus:</h5>
@@ -248,7 +258,7 @@
                           </div>
                     </article>
                   </div>
-                  <div class="col-4">
+                  <div class="col-4 squareUnderMap">
                     <article class="bg-blue t-white p-24 d-flex align-items-center justify-content-center h-100">
                           <div>
                             <h4>Con Goohaus ahorras:</h4>
@@ -259,16 +269,18 @@
                 </div>
             </section>
 
-        </div>
+          </div>
         </div>
 
 
       </div>
 
+    </div>
+
 
     <!------------------------------------------------------------------------------------->
     <!--Desktop Footer-->
-    <footer class="footer mb-0 desktopFooter">  
+    <footer class="footer mb-0 desktopFooter" style="margin-bottom: 30px;">  
 
       <div class="container-fluid">
         <div class="row">

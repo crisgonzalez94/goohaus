@@ -1,0 +1,61 @@
+/*Responsive*/
+@media (max-width: 1002px) {
+    .arrowsTitle{
+        display: none;
+    }
+    h3{
+        margin-top: 20px;
+    }
+    #cotizadorTitle{
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 900px) {
+    #cotizadorTitle{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    #cotizadorTitle{
+        font-size: 35px;
+    }
+}
+
+/*--------------------------------------------------------------*/
+/*Adaptando input slider al responsive*/
+@media (max-width: 575px) {
+    #bathroom-2 , #room-2{
+        display: block;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .slider-tick-label-container{
+        height: 40px;
+        margin-top: 30px;
+    }
+    .slider-tick-label{
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+/*-------------------------------------------------------------*/
+
+@media (max-width: 540px) {
+    .squareUnderMap h4{
+        font-size: 15px;
+    }
+    .squareUnderMap h3{
+        font-size: 17px;
+    }
+    .squareUnderMap h5{
+        font-size: 14px;
+    }
+}
+
+  
+@media (min-width: 621px){
+
+}
