@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="assets/css/responsiveHeader.css">
     <!--Responsive Footer-->
     <link rel="stylesheet" href="assets/css/responsiveFooter.css">
+    <!--Responsive-->
+    <link rel="stylesheet" href="assets/css/comprarBuscarResponsive.css">
 
     <title>GOOHAUS</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
@@ -209,7 +211,7 @@
       <div class="container-fluid h-100">
         <div class="row">
 
-          <div class="col-12 offset-md-1 mb-4">
+          <div class="col-md-12 offset-md-1 mb-4">
             <article class="mt-40">
               <h1><strong>¿Cómo lo hacemos?</strong></h1>
             </article>
@@ -222,45 +224,52 @@
 
     <section class="hero offset-md-1">
       <div class="steps-vertical">
+
+        <!------------------------------------------------------------------------------------------------>
+        <!--Step-->
         <div class="step">
           <div class="step-info">
             <div class="step-label">
-              <h2>Completa tu formulario</h2>
+              <h2 class="stepperText">Completa tu formulario</h2>
             </div>
           </div>
           <div class="step-content">
-            <h4>Queremos saber sobre tu propiedad datos como Dormitorios, Baños, Metraje, Precio y Características especiales. Te tomará sólo 4 minutos y luego, nosotros seguimos!</h4>
+            <h4 class="stepperText stepperSubtitle">Queremos saber sobre tu propiedad datos como Dormitorios, Baños, Metraje, Precio y Características especiales. Te tomará sólo 4 minutos y luego, nosotros seguimos!</h4>
             <div>
               <a href="" class="btn btn--primary mb-2 mt-3">¡Llena el formulario aquí!</a>
             </div>
           </div>
         </div>
 
+        <!------------------------------------------------------------------------------------------------>
+        <!--Step-->
         <div class="step">
           <div class="step-info">
             <div class="step-label">
-              <h2>Valoriza tu propiedad</h2>
+              <h2 class="stepperText">Valoriza tu propiedad</h2>
             </div>
           </div>
           <div class="step-content">
-            <h4>Nuestro Cotizador Goohaus te mostrará cuál es el valor de mercado de tu propiedad según el barrio y sus características principales. Simple y rápido, calcula tu precio de venta.</h4>
+            <h4 class="stepperText stepperSubtitle">Nuestro Cotizador Goohaus te mostrará cuál es el valor de mercado de tu propiedad según el barrio y sus características principales. Simple y rápido, calcula tu precio de venta.</h4>
             <div class=" mb-4">
               <a href="cotizador.html" class="btn btn--tertiary mt-3 ">Ir al valorizador comercial</a>
             </div>
           </div>
         </div>
 
+        <!------------------------------------------------------------------------------------------------>
+        <!--Step-->
         <div class="step">
           <div class="step-info">
             <div class="step-label">
-              <h2>Tarifa única Goohaus</h2>
+              <h2 class="stepperText">Tarifa única Goohaus</h2>
             </div>
           </div>
           <div class="step-content">
-            <h4>Eliminamos el tradicional 2% y lo reemplazamos por una tarifa única según el valor de la propiedad.</h4>
+            <h4 class="stepperText stepperSubtitle">Eliminamos el tradicional 2% y lo reemplazamos por una tarifa única según el valor de la propiedad.</h4>
             <section class="fichaSavings mb-40 mt-4 ">
               <div class="row " style="--bs-gutter-x: 0rem;">
-                <div class="col-6">
+                <div class="col-md-6">
                   <article class="saving__calculator bg-gray">
                     <div class="saving__calculator__top">
                       <h4 class="mb-3">Ingresa el valor en UF o mueve la barra</h4>
@@ -268,13 +277,13 @@
                         <label for="uf">Valor propiedad</label>
                         <input id="uf" type="text"/><br/>
                         <div class="row  mt-3 justify-content-end">
-                          <div class="col-6">
+                          <div class="col-md-6">
                             <div class="input-group ">
                               <input type="text" class="form-control">
                               <span class="input-group-text">UF</span>
                             </div>
                           </div>
-                          <div class="col-6">
+                          <div class="col-md-6">
                             <div>
                               <h3 class="text-end">
                                 <span>52.667.700 CLP</span>
@@ -287,7 +296,7 @@
                   </article>
                 </div>
 
-                <div class="col-3">
+                <div class="col-md-3">
                   <article class="bg-red t-white p-24 d-flex align-items-center justify-content-center h-100">
                     <div>
                           <h4>Tarifa Goohaus:</h4>
@@ -298,7 +307,7 @@
                         </div>
                   </article>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3">
                   <article class="bg-blue t-white p-24 d-flex align-items-center justify-content-center h-100">
                         <div>
                           <h3>Con Goohaus ahorras:</h3>
@@ -311,38 +320,39 @@
           </div>
         </div>
 
-
+        <!------------------------------------------------------------------------------------------------>
+        <!--Step-->
         <div class="step">
           <div class="step-info">
             <div class="step-label">
-              <h2>Evalúa planes de mejora (Próximamente)</h2>
+              <h2 class="stepperText">Evalúa planes de mejora (Próximamente)</h2>
             </div>
           </div>
           <div class="step-content">
-            <h4>Te aconsejamos con diseño y arquitectura, en el caso de buscar subir el precio de la propiedad. Podrías remodelar:</h4>
+            <h4 class="stepperText stepperSubtitle">Te aconsejamos con diseño y arquitectura, en el caso de buscar subir el precio de la propiedad. Podrías remodelar:</h4>
               <div class="row improvementPlans__list mt-4 ">
-                <div class="col-2">
+                <div class="col-md-2">
                   <article class="improvementPlans__list__item2 bg-pink d-flex flex-column align-items-center mb-4">
                     <h3 class="mb-1">Baños</h3>
                     <img src="./assets/img/ico-bano.svg" alt="">
                   </article>
                 </div>
 
-                <div class="col-2">
+                <div class="col-md-2">
                   <article class="improvementPlans__list__item2 bg-pink d-flex flex-column align-items-center mb-4">
                     <h3 class="mb-1">Pisos</h3>
                     <img src="./assets/img/ico-pisos.svg" alt="">
                   </article>
                 </div>
 
-                <div class="col-2">
+                <div class="col-md-2">
                   <article class="improvementPlans__list__item2 bg-pink d-flex flex-column align-items-center mb-4">
                     <h3 class="mb-1">Cocina </h3>
                     <img src="./assets/img/ico-cocinas.svg" alt="">
                   </article>
                 </div>
 
-                <div class="col-2">
+                <div class="col-md-2">
                   <article class="improvementPlans__list__item2 bg-pink d-flex flex-column align-items-center mb-4">
                     <h3 class="mb-1">Iluminación</h3>
                     <img src="./assets/img/ico-lamp.svg" alt="">
@@ -354,25 +364,26 @@
         </div>
 
 
-
+        <!------------------------------------------------------------------------------------------------>
+        <!--Step-->
         <div class="step">
           <div class="step-info">
             <div class="step-label">
-              <h2>Fotos pro</h2>
+              <h2 class="stepperText">Fotos pro</h2>
             </div>
           </div>
           <div class="step-content">
-            <h4>Tenemos fotógrafos super motivados, que mostrarán el mejor ángulo de tu propiedad.</h4>
+            <h4 class="stepperText stepperSubtitle">Tenemos fotógrafos super motivados, que mostrarán el mejor ángulo de tu propiedad.</h4>
             <div class="row mt-4">
-              <div class="col-3">
+              <div class="col-md-3">
                   <img src="./assets/img/fotopro-2.jpg" alt="" class="img-fluid ">
               </div>
 
-              <div class="col-3">
+              <div class="col-md-3">
                   <img src="./assets/img/fotopro-3.jpg" alt="" class="img-fluid">
               </div>
 
-              <div class="col-3">
+              <div class="col-md-3">
                   <img src="./assets/img/fotopro-4.jpg" alt="" class="img-fluid">
               </div>
 
@@ -381,42 +392,43 @@
           </div>
         </div>
 
-
+        <!------------------------------------------------------------------------------------------------>
+        <!--Step-->
         <div class="step">
           <div class="step-info">
             <div class="step-label">
-              <h2>Publicación en portales inmobiliarios</h2>
+              <h2 class="stepperText">Publicación en portales inmobiliarios</h2>
             </div>
           </div>
           <div class="step-content">
-            <h4>Redactaremos y subiremos toda la información útil a portales como:</h4>
+            <h4 class="stepperText stepperSubtitle">Redactaremos y subiremos toda la información útil a portales como:</h4>
             <div class="row mt-4">
 
-              <div class="col-2 ">
+              <div class="col-md-2 ">
                 <article class="portals__item d-flex justify-content-center align-items-center mb-4">
                   <img src="./assets/img/logo-toctoc.jpg" alt="" class="img-fluid portals__item__img">
                 </article>
               </div>
 
-              <div class="col-2">
+              <div class="col-md-2">
                 <article class="portals__item d-flex justify-content-center align-items-center mb-4">
                   <img src="./assets/img/home_yapo_logo.png" alt="" class="img-fluid portals__item__img">
                 </article>
               </div>
 
-              <div class="col-2">
+              <div class="col-md-2">
                 <article class="portals__item d-flex justify-content-center align-items-center mb-4">
                   <img src="./assets/img/portal-inmobilario.png" alt="" class="img-fluid portals__item__img">
                 </article>
               </div>
 
-              <div class="col-2">
+              <div class="col-md-2">
                 <article class="portals__item d-flex justify-content-center align-items-center mb-4">
                   <img src="./assets/img/logo-toctoc.jpg" alt="" class="img-fluid portals__item__img">
                 </article>
               </div>
 
-              <div class="col-2">
+              <div class="col-md-2">
                 <article class="portals__item d-flex justify-content-center align-items-center mb-4">
                   <img src="./assets/img/home_yapo_logo.png" alt="" class="img-fluid portals__item__img">
                 </article>
@@ -428,16 +440,17 @@
         </div>
 
 
-
+        <!------------------------------------------------------------------------------------------------>
+        <!--Step-->
         <div class="step">
           <div class="step-info">
             <div class="step-label">
-              <h2>Agenda Virtual</h2>
+              <h2 class="stepperText">Agenda Virtual</h2>
             </div>
           </div>
           <div class="step-content">
-            <h4>Tanto para la toma de fotos como para las visitas de posibles compradores, habilitamos una agenda virtual.</h4>
-            <div class="col-6 mt-3 mb-2">
+            <h4 class="stepperText stepperSubtitle">Tanto para la toma de fotos como para las visitas de posibles compradores, habilitamos una agenda virtual.</h4>
+            <div class="col-md-6 mt-3 mb-2">
               <article class="cardprofile">
                 <div class="cardprofile__fecha">
                   <h2><strong>24</strong></h2>
@@ -455,47 +468,51 @@
           </div>
         </div>
 
-
+        <!------------------------------------------------------------------------------------------------>
+        <!--Step-->
         <div class="step">
           <div class="step-info">
             <div class="step-label">
-              <h2>Recibe ofertas de posibles compradores</h2>
+              <h2 class="stepperText">Recibe ofertas de posibles compradores</h2>
             </div>
           </div>
           <div class="step-content">
-            <h4>Te notificaremos cada vez que un posible comprador haga una oferta. La que podrás revisar y/o aceptar dentro del portal.</h4>
-            <div class="col-8 mt-3 mb-2">
-              <article class="cardprofile">
+            <h4 class="stepperText stepperSubtitle">Te notificaremos cada vez que un posible comprador haga una oferta. La que podrás revisar y/o aceptar dentro del portal.</h4>
+            <div class="col-md-8 mt-3 mb-2">
+              <!--Profile-->
+              <article class="cardprofile stepperCardProfile">
                 <div class="cardprofile__photo">
                   <img src="https://i.imgur.com/0LKZQYM.jpg" class="rounded-circle" width="60" />
                 </div>
                 <div class="cardprofile__title">
-                  <h4>Paulina Varela</h4>
-                  <h5>Depto en Vaticano Chico</h5>
+                  <h4 class="comprarProfileTitle">Paulina Varela</h4>
+                  <h5 class="comprarProfileHouse">Depto en Vaticano Chico</h5>
+                </div>
+                <br>
+                <div class="cardprofile__price ">
+                  <h4 class="comprarProfileOferta">Oferta por 5000 UF</h4>
+                </div>
+                <br>
+                <div class="cardprofile__btn text-center">
+                  <a href="#" class="btn btn--primary comprarBtnOfertar">Aceptar Oferta</a>
                 </div>
 
-                <div class="cardprofile__price ">
-                  <h4>Oferta por 5000 UF</h4>
-                </div>
-                <div class="cardprofile__btn text-center">
-                  <a href="#" class="btn btn--primary">Aceptar Oferta</a>
-                </div>
-                <div class="cardprofile__btn text-center">
-                  <a href="#" class="btn btn--primary">Rechazar Oferta</a>
-                </div>
               </article>
+              <!--End Profile-->
             </div>
           </div>
         </div>
 
+        <!------------------------------------------------------------------------------------------------>
+        <!--Step-->
         <div class="step">
           <div class="step-info">
             <div class="step-label">
-              <h2>No te preocupes! Te acompañamos de principio a fin.​</h2>
+              <h2 class="stepperText">No te preocupes! Te acompañamos de principio a fin.​</h2>
             </div>
           </div>
           <div class="step-content">
-            <h4>Tenemos un equipo de ejecutivos preocupados por todos los detalles. No te dejaremos solo!</h4>
+            <h4 class="stepperText stepperSubtitle">Tenemos un equipo de ejecutivos preocupados por todos los detalles. No te dejaremos solo!</h4>
             <div>
               <a href="" class="btn btn--primary mb-2 mt-3 ">¡Quiero vender mi propiedad!</a>
             </div>
