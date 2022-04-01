@@ -12,8 +12,11 @@
 /*-----------------------------------------------------------------------------------------*/
 /*Elementos de l esteper de la vista comprar*/
 @media(max-width: 600px){
-    .stepperTittle{
+    .stepperText{
         max-width: 90%;
+    }
+    .stepperSubtitle{
+        font-size: 15px;
     }
     .calculadoraDividendoContainer{
         max-width: 95%;
@@ -58,6 +61,12 @@
 @media(max-width: 900px){
     #comprarArrow{
         width: 90px;
+    }
+}
+
+@media(max-width: 768px){
+    #comprarArrow{
+        display: none;
     }
 }
 
@@ -142,5 +151,22 @@
     }
     .buscarCasaTarifaPrecio{
         font-size: 11px;
+    }
+}
+
+
+
+@media (max-width: 459px) {
+    .comprarProfileTitle{
+        font-size: 12px;
+    }
+    .comprarProfileHouse{
+        font-size: 10px;
+    }
+    .comprarProfileOferta{
+        font-size: 10px;
+    }
+    .comprarBtnOfertar{
+        font-size: 10px;
     }
 }
