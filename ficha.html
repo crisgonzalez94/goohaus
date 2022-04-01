@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="assets/css/responsiveHeader.css">
     <!--Responsive Footer-->
     <link rel="stylesheet" href="assets/css/responsiveFooter.css">
+    <!--Responsive-->
+    <link rel="stylesheet" href="assets/css/fichaResponsive.css">
 
     <title>GOOHAUS</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
@@ -161,15 +163,15 @@
         <div class="row">
           <div class="col-md-8">
             <div class="heroFicha__title">
-              <h1><strong>Casa en Barrio Italia</strong></h1>
-              <h3 class="mb-0">Ñuñoa, Santiago</h3>
+              <h1 class="fichaTitle"><strong>Casa en Barrio Italia</strong></h1>
+              <h3 class="mb-0 fichaSubtitle">Ñuñoa, Santiago</h3>
             </div>
           </div>
   
           <div class="col-md-2">
             <div class="heroFicha__ctas text-end">
-              <a href="" class="btn btn--secondary mb-2">Ver Ahorro</a>
-              <a href="" class="btn btn--secondary mb-2">Calcular dividendo</a>
+              <a href="" class="btn btn--secondary mb-2 fichaHeaderSliderBtn">Ver Ahorro</a>
+              <a href="" class="btn btn--secondary mb-2 fichaHeaderSliderBtn">Calcular dividendo</a>
             </div>
           </div>
         </div>
@@ -191,8 +193,14 @@
       </div>
     </section>
 
+
     <div class="container-fluid">
       <div class="row">
+
+        <!------------------------------------------------------------------------------------>
+        <!--Aca va-->
+
+
         <div class="col-md-9">
 
           <nav class="fichaNav nav mb-40">
@@ -462,17 +470,17 @@
             <div class="container-fluid">
               <div class="row">
 
-                <div class="col-md-2">
-                  <img src="./assets/img/arrow-3.svg" alt="">
+                <div class="col-md-2 col-sm-1">
+                  <img src="./assets/img/arrow-3.svg" alt="" class="fichaArrow">
                 </div>
 
-                <div class="col-md-10">
+                <div class="col-md-10 col-sm-10">
 
                   <h2 class="mb-4">También te <strong>puede interesar:</strong></h2>
 
                   <div class="row">
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4">
                       <article class="card card--prop mb-4">
                         <div class="card__slide mb-2">
                           <div class="card__slide__items" id="houseSlide-1">
@@ -491,14 +499,14 @@
                         </div>
 
                         <div class="card__title mb-4">
-                          <h3 class="t-regular">Barrio El Aguilucho</h3>
-                          <h4>Providencia, Santiago</h4>
+                          <h3 class="t-regular fichaHouseTitle">Barrio El Aguilucho</h3>
+                          <h4 class="fichaHouseSubtitle">Providencia, Santiago</h4>
                         </div>
 
                         <ul class="card__caract mb-4">
                           <li class="card__caract__item card__caract__item--rooms">2</li>
                           <li class="card__caract__item card__caract__item--bathroom">1</li>
-                          <li class="card__caract__item card__caract__item--m2">100 m<sup>2</sup></li>
+                          <li class="card__caract__item card__caract__itemWide card__caract__item--m2">100 m<sup>2</sup></li>
                         </ul>
 
                         <div class="card__price d-flex align-items-center mb-4">
@@ -506,15 +514,15 @@
                             <option value="UF">UF</option>
                             <option value="Peso">$</option>
                           </select>
-                          <h3>UF <strong>1234</strong></h3>
+                          <h3 class="fichaHouseUf">UF <strong>1234</strong></h3>
                         </div>
 
-                        <a href="ficha.html" class="btn btn--primary t-regular">Ver propiedad</a>
+                        <a href="ficha.html" class="btn btn--primary t-regular fichaBtnVerPropiedad">Ver propiedad</a>
 
                       </article>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4">
                       <article class="card card--prop mb-4">
                         <div class="card__slide mb-2">
                           <div class="card__slide__items" id="houseSlide-2">
@@ -533,14 +541,14 @@
                         </div>
 
                         <div class="card__title mb-4">
-                          <h3 class="t-regular">Barrio El Aguilucho</h3>
-                          <h4>Providencia, Santiago</h4>
+                          <h3 class="t-regular fichaHouseTitle">Barrio El Aguilucho</h3>
+                          <h4 class="fichaHouseSubtitle">Providencia, Santiago</h4>
                         </div>
 
                         <ul class="card__caract mb-4">
                           <li class="card__caract__item card__caract__item--rooms">2</li>
                           <li class="card__caract__item card__caract__item--bathroom">1</li>
-                          <li class="card__caract__item card__caract__item--m2">100 m<sup>2</sup></li>
+                          <li class="card__caract__item card__caract__itemWide card__caract__item--m2">100 m<sup>2</sup></li>
                         </ul>
 
                         <div class="card__price d-flex align-items-center mb-4">
@@ -548,15 +556,15 @@
                             <option value="UF">UF</option>
                             <option value="Peso">$</option>
                           </select>
-                          <h3>UF <strong>1234</strong></h3>
+                          <h3 class="fichaHouseUf">UF <strong>1234</strong></h3>
                         </div>
 
-                        <a href="ficha.html" class="btn btn--primary t-regular">Ver propiedad</a>
+                        <a href="ficha.html" class="btn btn--primary t-regular fichaBtnVerPropiedad">Ver propiedad</a>
 
                       </article>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4">
                       <article class="card card--prop mb-4">
                         <div class="card__slide mb-2">
                           <div class="card__slide__items" id="houseSlide-3">
@@ -575,14 +583,14 @@
                         </div>
 
                         <div class="card__title mb-4">
-                          <h3 class="t-regular">Barrio El Aguilucho</h3>
-                          <h4>Providencia, Santiago</h4>
+                          <h3 class="t-regular fichaHouseTitle">Barrio El Aguilucho</h3>
+                          <h4 class="fichaHouseSubtitle">Providencia, Santiago</h4>
                         </div>
 
                         <ul class="card__caract mb-4">
                           <li class="card__caract__item card__caract__item--rooms">2</li>
                           <li class="card__caract__item card__caract__item--bathroom">1</li>
-                          <li class="card__caract__item card__caract__item--m2">100 m<sup>2</sup></li>
+                          <li class="card__caract__item card__caract__itemWide card__caract__item--m2">100 m<sup>2</sup></li>
                         </ul>
 
                         <div class="card__price d-flex align-items-center mb-4">
@@ -590,10 +598,10 @@
                             <option value="UF">UF</option>
                             <option value="Peso">$</option>
                           </select>
-                          <h3>UF <strong>1234</strong></h3>
+                          <h3 class="fichaHouseUf">UF <strong>1234</strong></h3>
                         </div>
 
-                        <a href="ficha.html" class="btn btn--primary t-regular">Ver propiedad</a>
+                        <a href="ficha.html" class="btn btn--primary t-regular fichaBtnVerPropiedad">Ver propiedad</a>
 
                       </article>
                     </div>
@@ -605,62 +613,69 @@
             </div>
           </section>
 
-          <div class="row mb-80 offset-md-1">
+          <!------------------------------------------------------------------------------------------------->
+          <!---Proximamente-->
+          <div class="row mb-80 offset-md-1 fichaProximamenteContainer">
             <h2 class="mb-5"> <strong>Próximamente...</strong></h2>
-            <div class="col-md-6">
-              <article class="cardMask cardMask--3 mb-n80" style="background-image: url('./assets/img/img-mask-1.jpg');">
+            <div class="col-md-7 col-sm-7">
+              <article class="cardMask cardMask--3 mb-n80 fichaProximamenteAsideContainer" style="background-image: url('./assets/img/img-mask-1.jpg');">
                 <div class="cardMask__text">
-                  <h3 class="mb-4">Te aconsejamos con</h3>
-                  <h2 class="mb-4 h1"><strong>diseño y arquitectura</strong></h2>
-                  <h3>en el caso de querer acomodar tu nuevo hogar.</h3>
+                  <h3 class="mb-4 fichaProximamenteSubTitle">Te aconsejamos con</h3>
+                  <h2 class="mb-4 h1 fichaProximamenteTitle"><strong>diseño y arquitectura</strong></h2>
+                  <h3 class="fichaProximamenteSubTitle">en el caso de querer acomodar tu nuevo hogar.</h3>
                 </div>
               </article>
             </div>
-            <div class="col-md-5 offset-md-1">
-              <h2>Planes de <strong>mejoras</strong>!</h2>
+            <div class="col-md-5 col-sm-5">
+              <h2 class="fichaProximamenteThirdTitle">Planes de <strong>mejoras</strong>!</h2>
               <h4 class="mb-4">Podrás remodelar:</h4>
 
               <div class="row improvementPlans__list">
                 
-                <div class="col-md-6">
-                  <article class="improvementPlans__list__item bg-pink d-flex flex-column align-items-center mb-4">
-                    <h3 class="mb-1">Baños</h3>
-                    <img src="./assets/img/ico-bano.svg" alt="">
+                <div class="col-md-6 col-sm-6 col-6">
+                  <article class="improvementPlans__list__item bg-pink d-flex flex-column align-items-center mb-4 fichaProximamenteIconContainer">
+                    <h3 class="mb-1 fichaProximamenteIconTitle">Baños</h3>
+                    <img class="fichaProximamenteIconImg" src="./assets/img/ico-bano.svg" alt="">
                   </article>
                 </div>
 
-                <div class="col-md-6">
-                  <article class="improvementPlans__list__item bg-pink d-flex flex-column align-items-center mb-4">
-                    <h3 class="mb-1">Pisos</h3>
-                    <img src="./assets/img/ico-pisos.svg" alt="">
+                <div class="col-md-6 col-sm-6 col-6">
+                  <article class="improvementPlans__list__item bg-pink d-flex flex-column align-items-center mb-4 fichaProximamenteIconContainer">
+                    <h3 class="mb-1 fichaProximamenteIconTitle">Pisos</h3>
+                    <img class="fichaProximamenteIconImg" src="./assets/img/ico-pisos.svg" alt="">
                   </article>
                 </div>
                 
-                <div class="col-md-6">
-                  <article class="improvementPlans__list__item bg-pink d-flex flex-column align-items-center mb-4">
-                    <h3 class="mb-1">Cocina</h3>
-                    <img src="./assets/img/ico-cocinas.svg" alt="">
+                <div class="col-md-6 col-sm-6 col-6">
+                  <article class="improvementPlans__list__item bg-pink d-flex flex-column align-items-center mb-4  fichaProximamenteIconContainer">
+                    <h3 class="mb-1 fichaProximamenteIconTitle">Cocina</h3>
+                    <img class="fichaProximamenteIconImg" src="./assets/img/ico-cocinas.svg" alt="">
                   </article>
                 </div>
 
-                <div class="col-md-6">
-                  <article class="improvementPlans__list__item bg-pink d-flex flex-column align-items-center mb-4">
-                    <h3 class="mb-1">Iluminación</h3>
-                    <img src="./assets/img/ico-lamp.svg" alt="">
+                <div class="col-md-6 col-sm-6 col-6">
+                  <article class="improvementPlans__list__item bg-pink d-flex flex-column align-items-center mb-4 fichaProximamenteIconContainer">
+                    <h3 class="mb-1 fichaProximamenteIconTitle">Iluminación</h3>
+                    <img class="fichaProximamenteIconImg" src="./assets/img/ico-lamp.svg" alt="">
                   </article>
                 </div>
                <a href="" class="btn btn--primary mb-2">¡Haz click aquí y te avisaremos cuando esté disponible!</a>
               </div>
             </div>
           </div>
+          <!--End Proximamente-->
+          <!------------------------------------------------------------------------------------------------->
+          
 
         </div>
 
-        <div class="col-md-3 ">
+        <!---------------------------------------------------------------------------------------------------->
+        <!--Me interesa-->
+        <div class="col-md-3 fichaMeInteresaBox">
           <aside class="fichaAside sticky-top">
             <article class="bg-pink p-24">
               <h3 class="mb-4"><strong>¡Me interesa!</strong></h3>
-              <div class="row ">
+              <div class="row fichaMeInteresaBtnContainer">
                 <a href="agenda.html" class="btn btn--primary mb-2">Agendar visita</a>
               </div>
               <div class="row">
@@ -671,9 +686,9 @@
               </div>
             </article>
 
-            <h3 class="mb-3 mt-3">¿Por qué <strong>GOOHAUS</strong>?</h3>
+            <h3 class="mb-3 mt-3 fichaNotResponsive">¿Por qué <strong>GOOHAUS</strong>?</h3>
 
-            <ul class="list-unstyled">
+            <ul class="list-unstyled  fichaNotResponsive">
               <li class="d-flex align-items-center">
                 <img src="./assets/img/ico-idea-blue.svg" alt="" class="me-2" style="max-width:10%;">
                 <h5>Decisiones informadas</h5>
@@ -696,6 +711,12 @@
             </ul>
           </aside> 
         </div>
+        <!--End Me interesa-->
+        <!---------------------------------------------------------------------------------------------------->
+        
+
+
+
       </div>
     </div>
 

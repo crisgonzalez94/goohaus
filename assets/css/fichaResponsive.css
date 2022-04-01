@@ -1,0 +1,134 @@
+.fichaArrow{
+    width: 120px;
+}
+
+@media(max-width: 911px){
+    .fichaTitle{
+        font-size: 30px;
+    }
+    .fichaSubtitle{
+        font-size: 25px;
+    }
+    .fichaHeaderSliderBtn{
+        font-size: 10px;
+    }
+    .fichaArrow{
+        width: 100px;
+    }
+}
+
+@media(max-width: 771px){
+    .fichaTitle{
+        font-size: 20px;
+    }
+    .fichaSubtitle{
+        font-size: 17px;
+    }
+    .fichaHeaderSliderBtn{
+        font-size: 10px;
+    }
+    .fichaArrow{
+        display: none;
+    }
+}
+
+@media(max-width: 550px){
+    .fichaTitle{
+        font-size: 12px;
+    }
+    .fichaSubtitle{
+        font-size: 11px;
+    }
+    .fichaHeaderSliderBtn{
+        font-size: 8px;
+    }
+}
+
+
+/*--------------------------------------------*/
+/*Iconos debajo de las casas*/
+@media(max-width: 1330px) {
+    .card__caract__item{
+        margin-right: 10px;
+        padding: 0;
+    }
+    .card__caract__itemWide{
+        min-width: 50%;
+    }
+}
+@media(max-width: 1238px) and (min-width: 766px){
+    .fichaHouseTitle{
+        font-size: 18px;
+    }
+    .fichaHouseSubtitle{
+        font-size: 16px;
+    }
+}
+@media(max-width: 1020px) and (min-width: 766px){
+    .fichaHouseUf{
+        font-size: 18px;
+    }
+}
+@media(max-width: 912px) and (min-width: 766px){
+    .fichaHouseUf{
+        font-size: 15px;
+    }
+    .fichaBtnVerPropiedad{
+        font-size: 13px;
+    }
+}
+
+/*---------------------------------------------------------*/
+/*Me interesa*/
+@media(max-width: 767px){
+    .fichaNotResponsive{
+        display: none;
+    }
+    .fichaMeInteresaBox{
+        margin-bottom: 20px;
+    }
+}
+
+/*----------------------------------------------*/
+/*Proximamente*/
+@media(max-width: 1201px){
+    .fichaProximamenteAsideContainer{
+        padding-top: 30px;
+    }
+    .fichaProximamenteTitle{
+        font-size: 35px;
+    }
+    .fichaProximamenteSubTitle{
+        font-size: 15px;
+    }
+    .fichaProximamenteIconTitle{
+        font-size: 20px;
+    }
+    .fichaProximamenteIconImg{
+        margin-top: 20px;
+        width: 50px;
+    }
+    .fichaProximamenteThirdTitle{
+        font-size: 27px;
+    }
+}
+
+@media(max-width: 1050px){
+    .fichaProximamenteIconTitle{
+        font-size: 15px;
+    }
+    .fichaProximamenteThirdTitle{
+        font-size: 23px;
+    }
+}
+
+@media(max-width: 1010px){
+    .fichaProximamenteTitle{
+        font-size: 30px;
+    }
+}
+@media(max-width: 920px){
+    .fichaProximamenteTitle{
+        font-size: 25px;
+    }
+}
