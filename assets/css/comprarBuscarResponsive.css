@@ -2,6 +2,13 @@
     width: 150px;
 }
 
+.btn-sm{
+    padding: 5px;
+}
+
+.buscarBtnBuscar{
+}
+
 /*-----------------------------------------------------------------------------------------*/
 /*Elementos de l esteper de la vista comprar*/
 @media(max-width: 600px){
@@ -76,5 +83,64 @@
         margin-top: 30px;
         font-size: 20px;
         font-weight: 600;
+    }
+}
+
+.buscarSelectUfPesos{
+    width: 100%;
+}
+
+/*----------------------------*/
+/*Vista buscar Cuadros de las casas*/
+
+@media (max-width: 876px) {
+    .buscarCasaTitulo{
+        font-size: 20px;
+    }
+    .buscarCasaSegundoTitulo{
+        font-size: 15px;
+    }
+    .buscarCasaPrecioUF{
+        font-size: 16px;
+    }
+    .buscarCasaTarifaTitulo{
+        font-size: 11px;
+    }
+    .buscarCasaTarifaPrecio{
+        font-size: 12px;
+    }
+}
+@media (max-width: 754px) {
+    .buscarCasaTitulo{
+        font-size: 25px;
+    }
+    .buscarCasaSegundoTitulo{
+        font-size: 20px;
+    }
+    .buscarCasaPrecioUF{
+        font-size: 21px;
+    }
+    .buscarCasaTarifaTitulo{
+        font-size: 15px;
+    }
+    .buscarCasaTarifaPrecio{
+        font-size: 14px;
+    }
+}
+@media (max-width: 465px) {
+    .buscarCasaTitulo{
+        font-size: 18px;
+    }
+    .buscarCasaSegundoTitulo{
+        font-size: 16px;
+    }
+    .buscarCasaPrecioUF{
+        font-size: 19px;
+    }
+    .buscarCasaTarifaTitulo{
+        font-size: 13px;
+    }
+    .buscarCasaTarifaPrecio{
+        font-size: 11px;
     }
 }

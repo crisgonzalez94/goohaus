@@ -210,7 +210,8 @@
               </div>
 
               <div class="col-md-1">
-                <button class="btn btn--primary mt-3" type="submit">Buscar</button>
+                <label for="rangopreciomax"></label>
+                <button class="btn btn--primary mt-3 buscarBtnBuscar" type="submit">Buscar</button>
               </div>
 
             </div>
@@ -226,12 +227,14 @@
       <div class="row mb-5">
         <div class="col-md-6">
 
-          <select class="form-select form-select--border form-select-sm mb-4 w-auto" id="order">
+          <select class="form-select form-select--border form-select-sm mb-4 w-auto buscarSelectUfPesos" id="order">
             <option disabled selected>Mostrar precio en:</option>
             <option value="UF">UF</option>
             <option value="Peso">Peso</option>
           </select>
 
+          <!-------------------------------------------------------------------------------------------->
+          <!--Casa-->
           <article>
             <div class="card card--prop card--prop-h mb-0">
               <div class="card__slide mb-0">
@@ -258,45 +261,49 @@
 
               <div class="w-100">
                 <div class="card__title mb-4">
-                  <h3 class="t-regular">Barrio El Aguilucho</h3>
-                  <h4>Providencia, Santiago</h4>
+                  <h3 class="t-regular buscarCasaTitulo">Barrio El Aguilucho</h3>
+                  <h4 class="buscarCasaSegundoTitulo">Providencia, Santiago</h4>
                 </div>
 
                 <ul class="card__caract mb-4">
                   <li class="card__caract__item card__caract__item--rooms">2</li>
                   <li class="card__caract__item card__caract__item--bathroom">1</li>
-                  <li class="card__caract__item card__caract__item--m2">100 m<sup>2</sup></li>
+                  <li class="card__caract__item card__caract__itemWide card__caract__item--m2">100 m<sup>2</sup></li>
                 </ul>
 
                 <div class="card__price d-flex align-items-center mb-4 justify-content-between">
                   <div class="d-flex">
-                    <h3>UF <strong>1234</strong></h3>
+                    <h3 class="buscarCasaPrecioUF">UF <strong>1234</strong></h3>
                   </div>
-                  <a href="agenda.html" class="btn btn--primary t-regular">Agendar</a>
-                  <a href="ficha.html" class="btn btn--primary t-regular">Ver</a>
+                  <a href="agenda.html" class="btn btn--primary btn-sm">Agendar</a>
+                  <a href="ficha.html" class="btn btn--primary btn-sm">Ver</a>
                 </div>
 
               </div>
             </div>
             <div class="card card--prop card--prop-h mb-4 justify-content-between">
               <div>
-                <h5>Tu tarifa única:</h5>
-                <h5 class="t-regular">$ 990.000</h5>
+                <h5 class="buscarCasaTarifaTitulo">Tu tarifa única:</h5>
+                <h5 class="t-regular buscarCasaTarifaPrecio">$ 990.000</h5>
               </div>
               <div>
-                <h5>Tu ahorro:</h5>
-                <h5 class="t-regular">$ 1.990.000</h5>
+                <h5 class="buscarCasaTarifaTitulo">Tu ahorro:</h5>
+                <h5 class="t-regular buscarCasaTarifaPrecio">$ 1.990.000</h5>
               </div>
               <div>
-                <h5>¿Te interesa? </h5>
-                <h5>¡Haz una oferta!</h5>
+                <h5 class="buscarCasaTarifaTitulo">¿Te interesa? </h5>
+                <h5 class="buscarCasaTarifaPrecio">¡Haz una oferta!</h5>
               </div>
               <div>
-                <a href="ofertar.html" class="btn btn--tetra t-regular">Ofertar</a>
+                <a href="ofertar.html" class="btn btn--tetra btn-sm">Ofertar</a>
               </div>
             </div>
           </article>
+          <!--End Casa-->
+          <!-------------------------------------------------------------------------------------------->
 
+          <!----------------------------------------------------------------------------------------------------->
+          <!--Casa-->
           <article>
             <div class="card card--prop card--prop-h mb-0">
               <div class="card__slide mb-0">
@@ -330,15 +337,15 @@
                 <ul class="card__caract mb-4">
                   <li class="card__caract__item card__caract__item--rooms">2</li>
                   <li class="card__caract__item card__caract__item--bathroom">1</li>
-                  <li class="card__caract__item card__caract__item--m2">100 m<sup>2</sup></li>
+                  <li class="card__caract__item card__caract__itemWide card__caract__item--m2">100 m<sup>2</sup></li>
                 </ul>
 
                 <div class="card__price d-flex align-items-center mb-4 justify-content-between">
                   <div class="d-flex">
                    <h3>UF <strong>1234</strong></h3>
                   </div>
-                  <a href="agenda.html" class="btn btn--primary t-regular">Agendar</a>
-                  <a href="ficha.html" class="btn btn--primary t-regular">Ver</a>
+                  <a href="agenda.html" class="btn btn--primary btn-sm">Agendar</a>
+                  <a href="ficha.html" class="btn btn--primary btn-sm">Ver</a>
                 </div>
 
               </div>
@@ -357,11 +364,15 @@
                 <h5>¡Haz una oferta!</h5>
               </div>
               <div>
-                <a href="ofertar.html" class="btn btn--tetra t-regular">Ofertar</a>
+                <a href="ofertar.html" class="btn btn--tetra btn-sm">Ofertar</a>
               </div>
             </div>
           </article>
+          <!--End Casa-->
+          <!----------------------------------------------------------------------------------------->
 
+          <!---------------------------------------------------------------------------------------------->
+          <!--Casa-->
           <article>
             <div class="card card--prop card--prop-h mb-0">
               <div class="card__slide mb-0">
@@ -395,15 +406,15 @@
                 <ul class="card__caract mb-4">
                   <li class="card__caract__item card__caract__item--rooms">2</li>
                   <li class="card__caract__item card__caract__item--bathroom">1</li>
-                  <li class="card__caract__item card__caract__item--m2">100 m<sup>2</sup></li>
+                  <li class="card__caract__item card__caract__itemWide card__caract__item--m2">100 m<sup>2</sup></li>
                 </ul>
 
                 <div class="card__price d-flex align-items-center mb-4 justify-content-between">
                   <div class="d-flex">
                    <h3>UF <strong>1234</strong></h3>
                   </div>
-                  <a href="agenda.html" class="btn btn--primary t-regular">Agendar</a>
-                  <a href="ficha.html" class="btn btn--primary t-regular">Ver</a>
+                  <a href="agenda.html" class="btn btn--primary btn-sm">Agendar</a>
+                  <a href="ficha.html" class="btn btn--primary btn-sm">Ver</a>
                 </div>
 
               </div>
@@ -422,11 +433,15 @@
                 <h5>¡Haz una oferta!</h5>
               </div>
               <div>
-                <a href="ofertar.html" class="btn btn--tetra t-regular">Ofertar</a>
+                <a href="ofertar.html" class="btn btn--tetra btn-sm">Ofertar</a>
               </div>
             </div>
           </article>
+          <!--End Casa-->
+          <!---------------------------------------------------------------------------------->
 
+          <!----------------------------------------------------------------------------------->
+          <!--Casa-->
           <article>
             <div class="card card--prop card--prop-h mb-0">
               <div class="card__slide mb-0">
@@ -460,15 +475,15 @@
                 <ul class="card__caract mb-4">
                   <li class="card__caract__item card__caract__item--rooms">2</li>
                   <li class="card__caract__item card__caract__item--bathroom">1</li>
-                  <li class="card__caract__item card__caract__item--m2">100 m<sup>2</sup></li>
+                  <li class="card__caract__item card__caract__itemWide card__caract__item--m2">100 m<sup>2</sup></li>
                 </ul>
 
                 <div class="card__price d-flex align-items-center mb-4 justify-content-between">
                   <div class="d-flex">
                     <h3>UF <strong>1234</strong></h3>
                   </div>
-                  <a href="agenda.html" class="btn btn--primary t-regular">Agendar</a>
-                  <a href="ficha.html" class="btn btn--primary t-regular">Ver</a>
+                  <a href="agenda.html" class="btn btn--primary btn-sm">Agendar</a>
+                  <a href="ficha.html" class="btn btn--primary btn-sm">Ver</a>
                 </div>
 
               </div>
@@ -487,10 +502,12 @@
                 <h5>¡Haz una oferta!</h5>
               </div>
               <div>
-                <a href="ofertar.html" class="btn btn--tetra t-regular">Ofertar</a>
+                <a href="ofertar.html" class="btn btn--tetra btn-sm">Ofertar</a>
               </div>
             </div>
           </article>
+          <!--End Casa-->
+          <!----------------------------------------------------------------------------------->
 
 
           <nav aria-label="Page navigation example">
@@ -520,7 +537,7 @@
       </div>
 
       <div class="row">
-        <div class="col-5 offset-md-3">
+        <div class="col-md-5 offset-md-3">
           <div class="d-flex">
             <a href="" class="btn btn--secondary w-50 me-2">Guardar busqueda</a>
             <p class="mb-0">Recibe notificaciones de nuevas propiedades en este sector.</p>
