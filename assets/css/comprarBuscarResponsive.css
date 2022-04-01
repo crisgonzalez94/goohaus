@@ -1,0 +1,80 @@
+#comprarArrow{
+    width: 150px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*Elementos de l esteper de la vista comprar*/
+@media(max-width: 600px){
+    .stepperTittle{
+        max-width: 90%;
+    }
+    .calculadoraDividendoContainer{
+        max-width: 95%;
+    }
+
+    .stepperCardProfile{
+        max-width: 80%;
+    }
+
+    .stepperCardProfile .cardprofile__photo{
+        width: 100%;
+    }
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+
+
+@media(max-width: 1400px){
+    #comprarArrow{
+        width: 125px;
+    }
+}
+@media(max-width: 1200px){
+    #comprarArrow{
+        width: 100px;
+    }
+}
+@media(max-width: 1000px){
+    #comprarArrow{
+        width: 90px;
+    }
+    /*Items de la casa (el item de metros cuadrados es el mas grande por lo que le damos mas ancho)*/
+    .card__caract__item{
+        width: 27%;
+        margin: 0;
+    }
+    .card__caract__itemWide{
+        width: 46%;
+    }
+}
+@media(max-width: 900px){
+    #comprarArrow{
+        width: 90px;
+    }
+}
+
+@media (max-width: 575px) {
+    #bathroom , #room{
+        display: block;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    #labelRoom , #labelBathroom{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .slider-tick-label-container{
+        height: 40px;
+        margin-top: 30px;
+    }
+    .slider-tick-label{
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}

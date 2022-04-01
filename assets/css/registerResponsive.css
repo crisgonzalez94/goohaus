@@ -1,0 +1,68 @@
+#asideRegister{
+
+}
+.register__sidebar__text{
+    text-align:center ;
+}
+.btn{
+    margin-bottom: 10px
+}
+.steepsRegister{
+    text-align: left;
+}
+
+@media (max-width: 1244px){
+    .steepsRegister{
+        font-size: 17px;
+    }
+}
+@media (max-width: 1104px){
+    .steepsRegister{
+        font-size: 14px;
+    }
+}
+@media (max-width: 962px){
+    .steepsRegister{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 926px){
+    .register__sidebar__text h2{
+        font-size: 25px;
+    }
+    .register__sidebar__text h3{
+        font-size: 20px;
+    }
+    .steepsRegister{
+        font-size: 10px;
+    }
+    .register__form{
+        margin-top: -35px;
+    }
+    .registerParagraph{
+        margin-top: -45px;
+    }
+    .registerParagraph h4{
+        font-size: 17px;
+    }
+}
+@media (max-width: 766px){
+    #registerForm{
+        margin-top: -50px;
+    }
+}
+@media (max-width: 686px){
+    .register__sidebar__text h2{
+        font-size: 20px;
+    }
+    .register__sidebar__text h3{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 574px){
+    #asideRegister{
+        display: none;
+    }
+}

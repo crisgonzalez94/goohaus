@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="assets/css/responsiveHeader.css">
     <!--Responsive Footer-->
     <link rel="stylesheet" href="assets/css/responsiveFooter.css">
+    <!--Responsive-->
+    <link rel="stylesheet" href="assets/css/comprarBuscarResponsive.css">
 
     <title>GOOHAUS</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
@@ -155,14 +157,16 @@
     <!--End Desktop Header-->
     <!--------------------------------------------------------------------------------------------------------->
 
+    <!----------------------------------------------------------------------------------------------------------->
+    <!--Formulario-->
     <section class="container-fluid mb-5">
         <div class="row">
-          <div class="col-11 offset-md-1">
+          <div class="col-md-12">
             <h1 class="h2 mb-4">¿Qué buscas en una propiedad?</h1>
             <div class="bg-gray search__bar">
               <div class="row">
 
-                <div class="col-3">
+                <div class="col-md-2 col-sm-6">
                   <div class="form-group">
                     <label for="type">Buscas...</label>
                     <select class="form-select" id="type">
@@ -172,37 +176,37 @@
                   </div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-md-3 col-sm-6">
                   <div class="form-group">
                     <label for="place">En...</label>
                     <input type="text" class="form-control" id="place" placeholder="Ej: Providencia, Santiago">
                   </div>
                 </div>
 
-                <div class="col-1">
-                  <label for="bathroom" class="mb-10">Baños</label>
+                <div class="col-md-1">
+                  <label id="labelBathroom" for="bathroom" class="mb-10">Baños</label>
                   <input id="bathroom" type="text"/>
                 </div>
 
-                <div class="col-1">
-                  <label for="room" class="mb-10">Dormitorios</label>
+                <div class="col-md-1">
+                  <label id="labelRoom" for="room" class="mb-10">Dormitorios</label>
                   <input id="room" type="text"/>
                 </div>
 
-                <div class="col-1">
+                <div class="col-md-2 col-sm-6">
                   <div class="form-group">
                     <label for="rangopreciomin">Precio en UF</label>
                     <input type="number" class="form-control" id="rangopreciomin" placeholder="Min.">
                   </div>
                 </div>
-                <div class="col-1">
+                <div class="col-md-2 col-sm-6">
                   <div class="form-group">
                     <label for="rangopreciomax">.</label>
                     <input type="number" class="form-control" id="rangopreciomax" placeholder="Máx.">
                   </div>
                 </div>
 
-                <div class="col-1">
+                <div class="col-md-1">
                   <button class="btn btn--primary mt-3" type="submit">Buscar</button>
                 </div>
 
@@ -211,22 +215,32 @@
           </div>
         </div>
     </section>
+    <!--End formulario-->
+    <!------------------------------------------------------------------------------------------->
 
+    <!------------------------------------------------------------------------------------------->
+    <!--Recomendaciones-->
     <section class="properties mb-40">
       <div class="container-fluid">
         <div class="row">
-
-          <div class="col-2">
-            <img src="./assets/img/arrow-3.svg" alt="">
+          <!------------------------------------------------------------->
+          <!--Flecha-->
+          <div class="col-md-1">
+            <img id="comprarArrow" src="./assets/img/arrow-3.svg" alt="">
           </div>
-
-          <div class="col-9">
+          <!--End flecha-->
+          <!------------------------------------------------------------->
+          <!------------------------------------------------------------------------->
+          <!--Recomendaciones-->
+          <div class="col-md-10">
 
             <h2 class="mb-4">Recomendaciones <strong>Goohaus</strong></h2>
 
             <div class="row">
 
-              <div class="col-4">
+              <!---------------------------------------------------------------------------------->
+              <!--Casa-->
+              <div class="col-md-4 col-sm-6">
                 <article class="card card--prop mb-4">
                   <div class="card__slide mb-2">
                     <div class="card__slide__items" id="houseSlide-1">
@@ -249,10 +263,11 @@
                     <h4>Providencia, Santiago</h4>
                   </div>
 
-                  <ul class="card__caract mb-4">
+                  <ul class="card__caract">
                     <li class="card__caract__item card__caract__item--rooms">2</li>
                     <li class="card__caract__item card__caract__item--bathroom">1</li>
-                    <li class="card__caract__item card__caract__item--m2">100 m<sup>2</sup></li>
+                    <!--Este item es mas ancho por lo que le añadimos una clase de responsive (wide)-->
+                    <li class="card__caract__item card__caract__itemWide card__caract__item--m2">100 m<sup>2</sup></li>
                   </ul>
 
                   <div class="card__price d-flex align-items-center mb-4">
@@ -267,8 +282,12 @@
 
                 </article>
               </div>
-
-              <div class="col-4">
+              <!--End Casa-->
+              <!---------------------------------------------------------------------------------->
+              
+              <!---------------------------------------------------------------------------------->
+              <!--Casa-->
+              <div class="col-md-4 col-sm-6">
                 <article class="card card--prop mb-4">
                   <div class="card__slide mb-2">
                     <div class="card__slide__items" id="houseSlide-2">
@@ -294,7 +313,8 @@
                   <ul class="card__caract mb-4">
                     <li class="card__caract__item card__caract__item--rooms">2</li>
                     <li class="card__caract__item card__caract__item--bathroom">1</li>
-                    <li class="card__caract__item card__caract__item--m2">100 m<sup>2</sup></li>
+                    <!--Este item es mas ancho por lo que le añadimos una clase de responsive (wide)-->
+                    <li class="card__caract__item card__caract__itemWide card__caract__item--m2">100 m<sup>2</sup></li>
                   </ul>
 
                   <div class="card__price d-flex align-items-center mb-4">
@@ -309,8 +329,12 @@
 
                 </article>
               </div>
-
-              <div class="col-4">
+              <!--End Casa-->
+              <!---------------------------------------------------------------------------------->
+              
+              <!---------------------------------------------------------------------------------->
+              <!--Casa-->
+              <div class="col-md-4 col-sm-6">
                 <article class="card card--prop mb-4">
                   <div class="card__slide mb-2">
                     <div class="card__slide__items" id="houseSlide-3">
@@ -336,7 +360,8 @@
                   <ul class="card__caract mb-4">
                     <li class="card__caract__item card__caract__item--rooms">2</li>
                     <li class="card__caract__item card__caract__item--bathroom">1</li>
-                    <li class="card__caract__item card__caract__item--m2">100 m<sup>2</sup></li>
+                    <!--Este item es mas ancho por lo que le añadimos una clase de responsive (wide)-->
+                    <li class="card__caract__item card__caract__itemWide card__caract__item--m2">100 m<sup>2</sup></li>
                   </ul>
 
                   <div class="card__price d-flex align-items-center mb-4">
@@ -351,6 +376,8 @@
 
                 </article>
               </div>
+              <!--End Casa-->
+              <!---------------------------------------------------------------------------------->
 
             </div>
 
@@ -358,6 +385,11 @@
         </div>
       </div>
     </section>
+    <!--End recomendaciones-->
+    <!-------------------------------------------------------------------------------->
+
+
+
  <!--
    <section class="hero">
       <div class="container-fluid ">
@@ -407,10 +439,10 @@
     </section>
 -->
     <section class="hero">
-      <div class="container-fluid h-100">
+      <div class="container h-100">
         <div class="row">
 
-          <div class="col-12 offset-md-1 mb-4">
+          <div class="col-md-11 offset-md-1 mb-4">
             <article class="mt-40">
               <h1><strong>¿Cómo lo hacemos?</strong></h1>
             </article>
@@ -428,14 +460,15 @@
         <div class="step">
           <div class="step-info">
             <div class="step-label">
-              <h2>Calcula tu tarifa única y ahorro</h2>
+              <h2 class="stepperTittle">Calcula tu tarifa única y ahorro</h2>
             </div>
           </div>
           <div class="step-content">
-            <h4>Queremos saber sobre tu propiedad datos como Dormitorios, Baños, Metraje, Precio y Características especiales.</h4>
+            <h4 class="stepperTittle">Queremos saber sobre tu propiedad datos como Dormitorios, Baños, Metraje, Precio y Características especiales.</h4>
             <section class="fichaSavings mb-40 mt-4 ">
               <div class="row">
-                <div class="col-6">
+
+                <div class="col-md-6">
                   <article class="saving__calculator bg-gray">
                     <div class="saving__calculator__top">
                       <h4 class="mb-3">Ingresa el valor en UF o mueve la barra</h4>
@@ -443,13 +476,13 @@
                         <label for="uf">Valor propiedad</label>
                         <input id="uf" type="text"/><br/>
                         <div class="row  mt-3 justify-content-end">
-                          <div class="col-6">
+                          <div class="col-md-6 col-sm-6">
                             <div class="input-group ">
                               <input type="text" class="form-control">
                               <span class="input-group-text">UF</span>
                             </div>
                           </div>
-                          <div class="col-6">
+                          <div class="col-md-6 col-sm-6">
                             <div>
                               <h3 class="text-end">
                                 <span>52.667.700 CLP</span>
@@ -461,7 +494,9 @@
                     </div>
                   </article>
                 </div>
-                <div class="col-3">
+
+
+                <div class="col-md-3">
                   <article class="bg-red t-white p-24 d-flex align-items-center justify-content-center h-100">
                     <div>
                           <h4>Con nosotros paga</h4>
@@ -472,7 +507,7 @@
                         </div>
                   </article>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3">
                   <article class="bg-blue t-white p-24 d-flex align-items-center justify-content-center h-100">
                         <div>
                           <h4>Elige Goohaus y ahorra:</h4>
@@ -491,16 +526,19 @@
         <div class="step">
           <div class="step-info">
             <div class="step-label">
-              <h2>Calcula tu dividendo aproximado</h2>
+              <h2  class="stepperTittle">Calcula tu dividendo aproximado</h2>
             </div>
           </div>
           <div class="step-content">
-            <h4>Con nuestra calculadora puedes revisar entre qué montos te puedes mover al momento de hacer una búsqueda.</h4>
+            <h4 class="stepperTittle">Con nuestra calculadora puedes revisar entre qué montos te puedes mover al momento de hacer una búsqueda.</h4>
 
-            <div class="container-fluid mt-4">
+            <div class="container mt-4">
                 <div class="row ">
-                  <div class="col-6">
-                    <article class="dividend bg-pink ">
+                  <div class="col-md-6">
+
+                    <!----------------------------------------------------------------------------------------------------------------------------->
+                    <!--Calculadora de Dividendo aproximado-->
+                    <article class="dividend bg-pink calculadoraDividendoContainer">
 
                       <form action="">
                         <div class="row">
@@ -512,7 +550,7 @@
                             </div>
                           </div>
 
-                          <div class="col-2">
+                          <div class="col-md-2">
                             <div class="form-group">
                               <label for="type">En</label>
                               <select class="form-select" id="currency">
@@ -522,7 +560,7 @@
                             </div>
                           </div>
 
-                          <div class="col-3">
+                          <div class="col-md-3">
                             <div class="form-group mb-3">
                               <label for="DFL2">DFL2</label>
                                 <select class="form-select" id="DFL2">
@@ -537,14 +575,14 @@
 
                         <div class="row">
 
-                          <div class="col-6">
+                          <div class="col-md-6">
                             <div class="form-group mb-3">
                               <label for="percent">Pie (%)</label>
                               <input id="percent" type="text"/>
                             </div>
                           </div>
 
-                          <div class="col-6">
+                          <div class="col-md-6">
                             <div class="form-group mb-3">
                               <label for="time">Plazo (Años)</label>
                               <input id="time" type="text"/>
@@ -574,15 +612,18 @@
                         </div>
 
                         <div class="row justify-content-end">
-                          <div class="col-3">
+                          <div class="col-md-3">
                             <button class="btn btn--primary mt-3 float-end" type="submit">Calcular</button>
                           </div>
                         </div>
 
                       </form>
                     </article>
+                    <!--End Calculadora de Dividendo aproximado-->
+                    <!----------------------------------------------------------------------------------------------------------------------------->
+                    
                   </div>
-                  <div class="col-4">
+                  <div class="col-md-4">
                     <article class="dividend bg-pink">
                       <div class="row">
                         <div class="col">
@@ -623,12 +664,12 @@
         <div class="step">
           <div class="step-info">
             <div class="step-label">
-              <h2>Agenda Virtual</h2>
+              <h2 class="stepperTittle">Agenda Virtual</h2>
             </div>
           </div>
           <div class="step-content">
-            <h4>Podrás agendar visitas en solo un par de clics. ¡Sin llamados, ni mensajes infructuosos, revisa la disponibilidad y agenda!</h4>
-            <div class="col-6 mt-3 mb-2">
+            <h4 class="stepperTittle">Podrás agendar visitas en solo un par de clics. ¡Sin llamados, ni mensajes infructuosos, revisa la disponibilidad y agenda!</h4>
+            <div class="col-md-6 mt-3 mb-2">
               <article class="cardprofile">
                 <div class="cardprofile__fecha">
                   <h2><strong>24</strong></h2>
@@ -697,13 +738,14 @@
         <div class="step">
           <div class="step-info">
             <div class="step-label">
-              <h2>Oferta en línea</h2>
+              <h2 class="stepperTittle">Oferta en línea</h2>
             </div>
           </div>
           <div class="step-content">
-            <h4>Te notificaremos si tu oferta es aceptada o rechazada y te acompañaremos en tu proceso de negociación.​</h4>
-            <div class="col-9 mt-3 mb-2">
-              <article class="cardprofile">
+            <h4 class="stepperTittle">Te notificaremos si tu oferta es aceptada o rechazada y te acompañaremos en tu proceso de negociación.​</h4>
+            <div class="col-md-9 mt-3 mb-2">
+              <!--Profile-->
+              <article class="cardprofile stepperCardProfile">
                 <div class="cardprofile__photo">
                   <img src="https://i.imgur.com/0LKZQYM.jpg" class="rounded-circle" width="60" />
                 </div>
@@ -711,15 +753,17 @@
                   <h4>Paulina Varela</h4>
                   <h5>Depto en Vaticano Chico</h5>
                 </div>
-
+                <br>
                 <div class="cardprofile__price ">
                   <h4>Oferta por 5000 UF</h4>
                 </div>
+                <br>
                 <div class="cardprofile__btn text-center">
                   <a href="#" class="btn btn--primary">Realizar Oferta</a>
                 </div>
 
               </article>
+              <!--End Profile-->
             </div>
           </div>
         </div>
@@ -727,11 +771,11 @@
         <div class="step">
           <div class="step-info">
             <div class="step-label">
-              <h2>Relájate, te acompañaremos en todo el proceso.</h2>
+              <h2 class="stepperTittle">Relájate, te acompañaremos en todo el proceso.</h2>
             </div>
           </div>
           <div class="step-content">
-            <h4>Habilitamos un portal para que revises tus visitas, tus favoritos, analices barrios, precios, documentos. Todo lo que necesites, cuenta con nosotros!</h4>
+            <h4 class="stepperTittle">Habilitamos un portal para que revises tus visitas, tus favoritos, analices barrios, precios, documentos. Todo lo que necesites, cuenta con nosotros!</h4>
             <div>
               <a href="buscar.html" class="btn btn--primary mb-2 mt-2 ">¡Buscar propiedades!</a>
             </div>

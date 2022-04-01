@@ -20,6 +20,11 @@
     <link rel="stylesheet" href="assets/css/responsiveHeader.css">
     <!--Responsive Footer-->
     <link rel="stylesheet" href="assets/css/responsiveFooter.css">
+    <!--Responsive del timelineFooter-->
+    <link rel="stylesheet" href="assets/css/timelineFooter.css">
+
+    <!--Responsive-->
+    <link rel="stylesheet" href="assets/css/comprarBuscarResponsive.css">
 
     <title>GOOHAUS</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
@@ -155,66 +160,71 @@
     <!--End Desktop Header-->
     <!--------------------------------------------------------------------------------------------------------->
 
+    <!----------------------------------------------------------------------------------------------------------->
+    <!--Formulario-->
     <section class="container-fluid mb-5">
-        <div class="row">
-          <div class="col-11 offset-md-1">
-            <h1 class="h2 mb-4">Estas buscando una casa en <strong>Providencia, Santiago</strong></h1>
-            <div class="bg-gray search__bar">
-              <div class="row">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="h2 mb-4">Estas buscando una casa en <strong>Providencia, Santiago</strong></h1>
+          <div class="bg-gray search__bar">
+            <div class="row">
 
-                <div class="col-3">
-                  <div class="form-group">
-                    <label for="type">Buscas...</label>
-                    <select class="form-select" id="type">
-                      <option value="1">Casa</option>
-                      <option value="2">Departamento</option>
-                    </select>
-                  </div>
+              <div class="col-md-2 col-sm-6">
+                <div class="form-group">
+                  <label for="type">Buscas...</label>
+                  <select class="form-select" id="type">
+                    <option value="1">Casa</option>
+                    <option value="2">Departamento</option>
+                  </select>
                 </div>
-
-                <div class="col-3">
-                  <div class="form-group">
-                    <label for="place">En...</label>
-                    <input type="text" class="form-control" id="place" placeholder="Ej: Providencia, Santiago">
-                  </div>
-                </div>
-
-                <div class="col-1">
-                  <label for="bathroom" class="mb-10">Baños</label>
-                  <input id="bathroom" type="text"/>
-                </div>
-
-                <div class="col-1">
-                  <label for="room" class="mb-10">Dormitorios</label>
-                  <input id="room" type="text"/>
-                </div>
-
-                <div class="col-1">
-                  <div class="form-group">
-                    <label for="rangopreciomin">Precio en UF</label>
-                    <input type="number" class="form-control" id="rangopreciomin" placeholder="Min.">
-                  </div>
-                </div>
-                <div class="col-1">
-                  <div class="form-group">
-                    <label for="rangopreciomax">.</label>
-                    <input type="number" class="form-control" id="rangopreciomax" placeholder="Máx.">
-                  </div>
-                </div>
-
-                <div class="col-1">
-                  <button class="btn btn--primary mt-3" type="submit">Buscar</button>
-                </div>
-
               </div>
+
+              <div class="col-md-3 col-sm-6">
+                <div class="form-group">
+                  <label for="place">En...</label>
+                  <input type="text" class="form-control" id="place" placeholder="Ej: Providencia, Santiago">
+                </div>
+              </div>
+
+              <div class="col-md-1">
+                <label id="labelBathroom" for="bathroom" class="mb-10">Baños</label>
+                <input id="bathroom" type="text"/>
+              </div>
+
+              <div class="col-md-1">
+                <label id="labelRoom" for="room" class="mb-10">Dormitorios</label>
+                <input id="room" type="text"/>
+              </div>
+
+              <div class="col-md-2 col-sm-6">
+                <div class="form-group">
+                  <label for="rangopreciomin">Precio en UF</label>
+                  <input type="number" class="form-control" id="rangopreciomin" placeholder="Min.">
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-6">
+                <div class="form-group">
+                  <label for="rangopreciomax">.</label>
+                  <input type="number" class="form-control" id="rangopreciomax" placeholder="Máx.">
+                </div>
+              </div>
+
+              <div class="col-md-1">
+                <button class="btn btn--primary mt-3" type="submit">Buscar</button>
+              </div>
+
             </div>
           </div>
         </div>
-    </section>
+      </div>
+  </section>
+  <!--End formulario-->
+  <!------------------------------------------------------------------------------------------->
+
 
     <section class="container-fluid">
       <div class="row mb-5">
-        <div class="col-5">
+        <div class="col-md-6">
 
           <select class="form-select form-select--border form-select-sm mb-4 w-auto" id="order">
             <option disabled selected>Mostrar precio en:</option>
@@ -502,7 +512,7 @@
           </nav>
         </div>
 
-        <div class="col-7">
+        <div class="col-md-6">
           <div class="search__map h-100">
             <iframe class="h-100 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26638.96249601387!2d-70.62675944847435!3d-33.42662531995215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf7c6e8366f7%3A0x87effcc00a478d7c!2sProvidencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1645646264437!5m2!1ses!2scl" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
@@ -653,7 +663,9 @@
     <!--End Responsive Footer-->
     <!------------------------------------------------------------------------------------->
 
-    <section class="timeline bg-blue d-flex align-items-center">
+    <!---------------------------------------------------------------------------------------------------->
+    <!--TimelineFooter-->
+    <section class="timeline bg-blue d-flex align-items-center" id="timelineFooter">
 
       <div class="d-flex align-items-center timeline__list h-100">
         <h5 class="timeline__title">¡Te acompañamos <strong>siempre</strong>!</h5>
@@ -699,6 +711,9 @@
       
 
     </section>
+    <!--End TimelineFooter-->
+    <!---------------------------------------------------------------------------------------------------->
+    
 
     <!-- JS -->
     <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
