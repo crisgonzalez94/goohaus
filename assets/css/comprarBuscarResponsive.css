@@ -9,6 +9,10 @@
 .buscarBtnBuscar{
 }
 
+.stepperText{
+    text-align: left;
+}
+
 /*-----------------------------------------------------------------------------------------*/
 /*Elementos de l esteper de la vista comprar*/
 @media(max-width: 600px){
