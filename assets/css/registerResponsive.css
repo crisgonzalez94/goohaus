@@ -65,4 +65,54 @@
     #asideRegister{
         display: none;
     }
+    .registerParagraph{
+        margin-top: -60px;
+    }
+    .registerParagraph h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-height: 668px){
+    #asideRegister{
+        display: none;
+    }
+    .registerParagraph{
+        margin-top: -70px;
+    }
+    .registerParagraph h2{
+        font-size: 15px;
+    }
+    .registerParagraph h1{
+        font-size: 25px;
+    }
+    .register__form{
+        margin-top: -60px;
+    }
+    .register__form h4{
+        font-size: 17px;
+    }
+    .register__form input{
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    .registerParagraph2{
+        margin-top: -15px;
+    }
+    .registerParagraph2 h2{
+        font-size: 25px;
+    }
+    .registerParagraph3 h4{
+        font-size: 20px;
+    }
+    .formRequerimentos ul li{
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+    .registerMainBtn{
+        font-size: 12px;
+    }
+    .registerTerminosCondiciones{
+        font-size: 12px;
+    }
 }
