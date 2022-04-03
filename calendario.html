@@ -16,10 +16,7 @@
 
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
-
-    <!--Css Creado para el calendario-->
-    <link rel="stylesheet" href="assets/css/calendario.css">
-
+     
     <!--Clase css creada por crisgonzalez94 a modo de prueba-->
     <link rel="stylesheet" href="assets/css/comprar_03.css">
     <!--Responsive del timelineFooter-->
@@ -27,340 +24,276 @@
 
     <title>GOOHAUS</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <!--Sidebar-->
+    <link rel="stylesheet" href="assets/css/sidebar.css">
+    <!--Calendario-->
+    <link rel="stylesheet" href="assets/css/calendario.css">
   </head>
 
   <body>
 
-    <!--Main Container-->
-    <div class="container-fluid mainContainer">
-        <div class="row">
-            <!--------------------------------------------------------------------------------------->
-            <!--Sidebar-->
-            <div class="col-md-2" id="sidebarUser">
-                <!--Logo-->
-                <a href="index.html" id="mainLogo">
-                    <img src="assets/img/GH-horizontal.svg" alt="Logotipo GOOHAUS" id="mainLogoImg">
-                </a>
-                <!--End Logo-->
-                <!--Profile picture and logout-->
-                <div class="row logoutAndProfilePictureContainer">
-                    <div class="col-md-4">
-                        <img src="assets/img/profile-picture.png" id="profilePicture" alt="">
-                    </div>
-                    <div class="col-md-8">
-                        <span id="profileName">Juan Perez</span><br>
-                        <a href="" id="logoutLink">Cerrar sesión</a>
-                    </div>
-                </div>
-                <!--End Profile picture and logout-->
 
-                <!--Herramientas del sidebar-->
-                <div class="row sidebarToolsContainer">
-                  <!--Icono del apartado-->
-                  <div class="col-md-2"><i class="bi bi-house-door"></i></div>
-                  <!---Opciones-->
-                  <div class="col-md-10">
-                    <ul class="sidebarTools">
-                      <li><a href="#">Inicio</a></li>
-                      <li><a href="#">Tu viaje</a></li>
-                      <li><a href="#">Tus favoritos</a></li>
-                      <li><a href="#">Valorizacion comercial</a></li>
-                      <li><a href="#">Agenda</a></li>
-                      <li><a href="#">Tu casa ideal</a></li>
-                      <li><a href="#">Calcula tu dividendo</a></li>
-                      <li><a href="#">Estado compraventa</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <!--End Herramientas del sidebar-->
+    <!----------------------------------------------------------------------------------->
+    <!--Contenido del Sidebar-->
+    <div id="mySidepanel" class="sidepanel">
+      <!--Boton de cerrar sidebar-->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <!--End boton cerrar sidebar-->
 
-                <!--Herramientas del sidebar-->
-                <div class="row sidebarToolsContainer">
-                  <!--Icono del apartado-->
-                  <div class="col-md-2"><i class="bi bi-pencil"></i></div>
-                  <!---Opciones-->
-                  <div class="col-md-10">
-                    <ul class="sidebarTools">
-                      <li><a href="#">Editar perfil</a></li>
-                      <li><a href="#">Documentos de tu propiedad</a></li>
-
-                    </ul>
-                  </div>
-                </div>
-                <!--End Herramientas del sidebar-->
-<!--
-
-                Herramientas del sidebar
-                <div class="row sidebarToolsContainer">
-                  Icono del apartado
-                  <div class="col-md-2"><i class="bi bi-pencil"></i></div>
-                  -Opciones
-                  <div class="col-md-10">
-                    <ul class="sidebarTools">
-                      <li><a href="#">Editar perfil</a></li>
-                      <li><a href="#" class="sidebarToolsTextLarge">Documentos de tu propiedad</a></li>
-                    </ul>
-                  </div>
-                </div>
-                End Herramientas del sidebar
--->
-
-            </div>
-            <!--End Sidebar-->
-            <!--------------------------------------------------------------------------------------->
-
-            <!--------------------------------------------------------------------------------------->
-            <!--Main Content-->
-            <div class="col-md-10 mt-10">
-
-              <!------------------------------------------------------------------------------------->
-              <!--Bienvenida-->
-              <div class="row ">
-                <div class="col-md-7 mb-2">
-                  <h1>¡Bienvenido <strong>Juan!</strong></h1>
-                </div>
-                <!--Boton de portal del comprador-->
-                <div class="col-md-5">
-
-                </div>
-
-              </div>
-              <!--End Bienvenida-->
-              <!------------------------------------------------------------------------------------->
-
-
-
-              <!--Calendario-->
-              <div class="container mt-4">
-                <div class="col-md-12 ">
-
-                  <header>
-                    <h3 class="arrowTitle">Tus <strong>Citas </strong>en estos dias.</h3>
-                    <div class="row d-none d-sm-flex p-1 bg-dark text-white">
-                      <h5 class="col-sm p-1 text-center dayTitle">Domingo</h5>
-                      <h5 class="col-sm p-1 text-center dayTitle">Lunes</h5>
-                      <h5 class="col-sm p-1 text-center dayTitle">Martes</h5>
-                      <h5 class="col-sm p-1 text-center dayTitle">Miercoles</h5>
-                      <h5 class="col-sm p-1 text-center dayTitle">Jueves</h5>
-                      <h5 class="col-sm p-1 text-center dayTitle">Viernes</h5>
-                      <h5 class="col-sm p-1 text-center dayTitle">Sabado</h5>
-                    </div>
-                  </header>
-                  <div class="row border border-right-0 border-bottom-0">
-                    <!--Day----------------------------------->
-                    <div class="day col-sm p-2 border border-left-0 border-top-0 d-none d-sm-inline-block bg-light text-muted">
-                      <h5 class="row align-items-center">
-                        <span class="date col-1">29</span>
-                        <small class="col d-sm-none text-center text-muted">Sunday</small>
-                        <span class="col-1"></span>
-                      </h5>
-                      <p class="d-sm-none">No tienes citas</p>
-                    </div>
-                    <!--End Day----------------------------------->
-
-                    <!--Day----------------------------------->
-                    <div class="day col-sm p-2 border border-left-0 border-top-0 d-none d-sm-inline-block bg-light text-muted">
-                      <h5 class="row align-items-center">
-                        <span class="date col-1">30</span>
-                        <small class="col d-sm-none text-center text-muted">Monday</small>
-                        <span class="col-1"></span>
-                      </h5>
-                      <p class="d-sm-none">No tienes citas</p>
-                    </div>
-
-                    <!--Day----------------------------------->
-                    <div class="day col-sm p-2 border border-left-0 border-top-0 d-none d-sm-inline-block bg-light text-muted">
-                      <h5 class="row align-items-center">
-                        <span class="date col-1">31</span>
-                        <small class="col d-sm-none text-center text-muted">Tuesday</small>
-                        <span class="col-1"></span>
-                      </h5>
-                      <p class="d-sm-none">No tienes citas</p>
-                    </div>
-
-                    <!--Day----------------------------------->
-                    <div class="day col-sm p-2 border border-left-0 border-top-0">
-                      <h5 class="row align-items-center">
-                        <span class="date col-1">1</span>
-                        <small class="col d-sm-none text-center text-muted">Wednesday</small>
-                        <span class="col-1"></span>
-                      </h5>
-                      <p class="d-sm-none">No tienes citas</p>
-                    </div>
-
-                    <!--Day----------------------------------->
-                    <div class="day col-sm p-2 border border-left-0 border-top-0">
-                      <h5 class="row align-items-center">
-                        <span class="date col-1">2</span>
-                        <small class="col d-sm-none text-center text-muted">Thursday</small>
-                        <span class="col-1"></span>
-                      </h5>
-                      <p class="d-sm-none">No tienes citas</p>
-                    </div>
-
-                    <!--Day----------------------------------->
-                    <div class="day col-sm p-2 border border-left-0 border-top-0">
-                      <h5 class="row align-items-center">
-                        <span class="date col-1">3</span>
-                        <small class="col d-sm-none text-center text-muted">Friday</small>
-                        <span class="col-1"></span>
-                      </h5>
-                      <!--Event---------------------->
-                      <a href="eventdetail.html" class="event">
-                        <h6 class="eventTitle">Depto en Vaticano Chico</h6>
-                        <h5 class="eventHours">15:30hs</h5>
-                      </a>
-                      <!--End event----------------->
-                      <!--Event---------------------->
-                      <a href="eventdetail.html" class="event">
-                        <h6 class="eventTitle">Depto en Vaticano Chico</h6>
-                        <h5 class="eventHours">15:30hs</h5>
-                      </a>
-                      <!--End event----------------->
-                    </div>
-
-                    <!--Day----------------------------------->
-                    <div class="day col-sm p-2 border border-left-0 border-top-0">
-                      <h5 class="row align-items-center">
-                        <span class="date col-1">4</span>
-                        <small class="col d-sm-none text-center text-muted">Saturday</small>
-                        <span class="col-1"></span>
-                      </h5>
-                      <p class="d-sm-none">No tienes citas</p>
-                    </div>
-
-                    <div class="w-100"></div>
-
-                    <!--Day----------------------------------->
-                    <div class="day col-sm p-2 border border-left-0 border-top-0">
-                      <h5 class="row align-items-center">
-                        <span class="date col-1">5</span>
-                        <small class="col d-sm-none text-center text-muted">Sunday</small>
-                        <span class="col-1"></span>
-                      </h5>
-                      <!--Event---------------------->
-                      <a href="eventdetail.html" class="event">
-                        <h6 class="eventTitle">Depto en Vaticano Chico</h6>
-                        <h5 class="eventHours">15:30hs</h5>
-                      </a>
-                      <!--End event----------------->
-                      <!--Event---------------------->
-                      <a href="eventdetail.html" class="event">
-                        <h6 class="eventTitle">Depto en Vaticano Chico</h6>
-                        <h5 class="eventHours">15:30hs</h5>
-                      </a>
-                      <!--End event----------------->
-                    </div>
-
-                    <!--Day----------------------------------->
-                    <div class="day col-sm p-2 border border-left-0 border-top-0">
-                      <h5 class="row align-items-center">
-                        <span class="date col-1">6</span>
-                        <small class="col d-sm-none text-center text-muted">Monday</small>
-                        <span class="col-1"></span>
-                      </h5>
-                      <p class="d-sm-none">No tienes citas</p>
-                    </div>
-                    <!--End Day----------------------------------->
-
-                    <!--Day----------------------------------->
-                    <div class="day col-sm p-2 border border-left-0 border-top-0">
-                      <h5 class="row align-items-center">
-                        <span class="date col-1">7</span>
-                        <small class="col d-sm-none text-center text-muted">Tuesday</small>
-                        <span class="col-1"></span>
-                      </h5>
-                      <!--Event---------------------->
-                      <a href="eventdetail.html" class="event">
-                        <h6 class="eventTitle">Depto en Vaticano Chico</h6>
-                        <h5 class="eventHours">15:30hs</h5>
-                      </a>
-                      <!--End event----------------->
-                    </div>
-                    <!--End Day----------------------------------->
-
-                    <!--Day----------------------------------->
-                    <div class="day col-sm p-2 border border-left-0 border-top-0">
-                      <h5 class="row align-items-center">
-                        <span class="date col-1">8</span>
-                        <small class="col d-sm-none text-center text-muted">Wednesday</small>
-                        <span class="col-1"></span>
-                      </h5>
-
-                      <!--Event---------------------->
-                      <a href="eventdetail.html" class="event">
-                        <h6 class="eventTitle">Depto en Vaticano Chico</h6>
-                        <h5 class="eventHours">15:30hs</h5>
-                      </a>
-                      <!--End event----------------->
-                      <!--Event---------------------->
-                      <a href="eventdetail.html" class="event">
-                        <h6 class="eventTitle">Depto en Vaticano Chico</h6>
-                        <h5 class="eventHours">15:30hs</h5>
-                      </a>
-                      <!--End event----------------->
-
-                    </div>
-                    <!--End Day----------------------------------->
-
-                    <!--Day----------------------------------->
-                    <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
-                      <h5 class="row align-items-center">
-                        <span class="date col-1">9</span>
-                        <small class="col d-sm-none text-center text-muted">Thursday</small>
-                        <span class="col-1"></span>
-                      </h5>
-                      <p class="d-sm-none">No tienes citas</p>
-                    </div>
-                    <!--End Day----------------------------------->
-
-                    <!--Day--------------------------------------->
-                    <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
-                      <h5 class="row align-items-center">
-                        <span class="date col-1">10</span>
-                        <small class="col d-sm-none text-center text-muted">Friday</small>
-                        <span class="col-1"></span>
-                      </h5>
-                      <p class="d-sm-none">No tienes citas</p>
-                    </div>
-                    <!--End Day----------------------------------->
-
-                    <!--Day--------------------------------------->
-                    <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
-                      <h5 class="row align-items-center">
-                        <span class="date col-1">11</span>
-                        <small class="col d-sm-none text-center text-muted">Saturday</small>
-                        <span class="col-1"></span>
-                      </h5>
-                      <p class="d-sm-none">No tienes citas</p>
-                    </div>
-                    <!--Day--------------------------------------->
-
-                    <div class="w-100"></div>
-
-                  </div>
-
-                </div>
-              </div>
-              <!--End Calendario-->
-
-
-              </div>
-
-            </div>
-            <!--End Main Content-->
-            <!--------------------------------------------------------------------------------------->
-
-
+      <!--------------------------------------------------------------------------------------------------->
+      <!--Contenido del sidebar-->
+      <div class="sidebarContent">
+        <div class="containerLogoSidebar">
+          <img src="assets/img/GH-horizontal.svg" alt="Logotipo GOOHAUS" class="sidebarLogo">
         </div>
+        
+        <!-------------------------------------------->
+        <!--Profile picture and logout-->
+        <div class="row logoutAndProfilePictureContainer">
+            <div class="col-3">
+                <img src="assets/img/profile-picture.png" id="profilePicture" alt="">
+            </div>
+            <div class="col-9">
+                <span id="profileName">Juan Perez</span><br>
+                <a href="" id="logoutLink">Cerrar sesión</a>
+            </div>
+        </div>
+        <!--End Profile picture and logout-->
+        <!---------------------------------------------->
 
+        <!--Herramientas del sidebar-->
+        <div class="row sidebarToolsContainer">
+          <!--Icono del apartado-->
+          <div class="sidebarToolsIconContainer" style="text-align: left;"><i class="bi bi-house-door"></i></div>
+          <!---Opciones-->
+          <div class="sidebarToolsListContainer">
+            <ul class="sidebarTools">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Tu viaje</a></li>
+              <li><a href="#">Tus favoritos</a></li>
+              <li><a href="#">Valorizacion comercial</a></li>
+              <li><a href="#">Agenda</a></li>
+              <li><a href="#">Tu casa ideal</a></li>
+              <li><a href="#">Calcula tu dividendo</a></li>
+              <li><a href="#">Estado compraventa</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--End Herramientas del sidebar-->
 
+        <!--Herramientas del sidebar-->
+        <div class="row sidebarToolsContainer">
+          <!--Icono del apartado-->
+          <div class="sidebarToolsIconContainer"><i class="bi bi-pencil"></i></div>
+          <!---Opciones-->
+          <div class="sidebarToolsListContainer">
+            <ul class="sidebarTools">
+              <li><a href="#">Editar perfil</a></li>
+              <li><a href="#">Documentos de tu propiedad</a></li>
 
+            </ul>
+          </div>
+        </div>
+        <!--End Herramientas del sidebar-->
 
+      </div>
+      <!--End Contenido del sidebar-->
+      <!--------------------------------------------------------------------------------------------------->
+      
 
-    </body>
-    <!--End main Container-->
+    </div>
+    <!----------------------------------------------------------------------------------->
+    
 
+    <!---------------------------------------------------------------------------------------------->
+    <!--Boton de Abrir Sidebar-->
+    <button class="openbtn" onclick="openNav()">
+      <i class="bi bi-list sidebarOpenBtnIcon"></i>
+      <img src="assets/img/GH-horizontal.svg" alt="Logotipo GOOHAUS" class="sidebarLogo">
+    </button>
+    <!--End Boton de Abrir Sidebar-->
+    <!--------------------------------------------------------------------------------------------->
+    
+    
+    <!----------------------------------------------------------------------------------------------------------->
+    <!--End Contenido Principal-->
+    <div class="mainContent">
+
+      <h1>¡Bienvenido <strong>Juan!</strong></h1>
+      <h3 class="arrowTitle">Tus <strong>Citas </strong>en estos dias.</h3>
+
+      <!----------------------------------------------------------------------------------------------------------->
+      <!--Calendario-->
+      <div class="calendario">
+        <!-------------------------------------------------------------------->
+        <!--Fila semanal-->
+        <div class="daysOfWeeks">
+          <!----------------------------------->
+          <!--Day-->
+          <div class="dayOfWeekContainer">
+            <div class="dayLabel">Domingo</div>
+            <div class="eventContainer">
+              <div class="numberDayContainer">30</div>
+              <!--Evento-->
+              <div class="event">
+                <h6>Dpto Vaticano Chico</h6>
+                <h4>15:30hs</h4>
+              </div>
+              <!--EndEvento-->
+              <!--Evento-->
+              <div class="event">
+                <h6>Dpto Vaticano Chico</h6>
+                <h4>15:30hs</h4>
+              </div>
+              <!--EndEvento-->
+            </div>
+          </div>
+          <!--End Day-->
+          <!----------------------------------->
+          
+          <!----------------------------------->
+          <!--Day-->
+          <div class="dayOfWeekContainer">
+            <div class="dayLabel">Lunes</div>
+            <div class="eventContainer">
+              <div class="numberDayContainer">31</div>
+              <!--Evento-->
+              <div class="event">
+                <h6>Dpto Vaticano Chico</h6>
+                <h4>15:30hs</h4>
+              </div>
+              <!--EndEvento-->
+              <!--Evento-->
+              <div class="event">
+                <h6>Dpto Vaticano Chico</h6>
+                <h4>15:30hs</h4>
+              </div>
+              <!--EndEvento-->
+            </div>
+          </div>
+          <!--End Day-->
+          <!----------------------------------->
+
+          <!----------------------------------->
+          <!--Day-->
+          <div class="dayOfWeekContainer">
+            <div class="dayLabel">Martes</div>
+            <div class="eventContainer">
+              <div class="numberDayContainer">1</div>
+              <!--Evento-->
+              <p>No tienes eventos</p>
+              <!--EndEvento-->
+            </div>
+          </div>
+          <!--End Day-->
+          <!----------------------------------->
+
+          <!----------------------------------->
+          <!--Day-->
+          <div class="dayOfWeekContainer">
+            <div class="dayLabel">Miercoles</div>
+            <div class="eventContainer">
+              <div class="numberDayContainer">2</div>
+              <!--Evento-->
+              <div class="event">
+                <h6>Dpto Vaticano Chico</h6>
+                <h4>15:30hs</h4>
+              </div>
+              <!--EndEvento-->
+              <!--Evento-->
+              <div class="event">
+                <h6>Dpto Vaticano Chico</h6>
+                <h4>15:30hs</h4>
+              </div>
+              <!--EndEvento-->
+            </div>
+          </div>
+          <!--End Day-->
+          <!----------------------------------->
+
+          <!----------------------------------->
+          <!--Day-->
+          <div class="dayOfWeekContainer">
+            <div class="dayLabel">Jueves</div>
+            <!--Eventos del dia-->
+            <div class="eventContainer">
+              <div class="numberDayContainer">3</div>
+              <!--Evento-->
+              <div class="event">
+                <h6>Dpto Vaticano Chico</h6>
+                <h4>15:30hs</h4>
+              </div>
+              <!--EndEvento-->
+              <!--Evento-->
+              <div class="event">
+                <h6>Dpto Vaticano Chico</h6>
+                <h4>15:30hs</h4>
+              </div>
+              <!--EndEvento-->
+              <!--Evento-->
+              <div class="event">
+                <h6>Dpto Vaticano Chico</h6>
+                <h4>15:30hs</h4>
+              </div>
+              <!--EndEvento-->
+            </div>
+            <!--End Eventos del dia-->
+          </div>
+          <!--End Day-->
+          <!----------------------------------->
+
+          <!----------------------------------->
+          <!--Day-->
+          <div class="dayOfWeekContainer">
+            <div class="dayLabel">Viernes</div>
+            <!--Eventos del dia-->
+            <div class="eventContainer">
+              <div class="numberDayContainer">4</div>
+              <!--Evento-->
+              <div class="event">
+                <h6>Dpto Vaticano Chico</h6>
+                <h4>15:30hs</h4>
+              </div>
+              <!--EndEvento-->
+            </div>
+            <!--End evento del dia-->
+          </div>
+          <!--End Day-->
+          <!----------------------------------->
+
+          <!----------------------------------->
+          <!--Day-->
+          <div class="dayOfWeekContainer">
+            <div class="dayLabel">Sabado</div>
+            <div class="eventContainer">
+              <div class="numberDayContainer">5</div>
+              <!--Evento-->
+              <div class="event">
+                <h6>Dpto Vaticano Chico</h6>
+                <h4>15:30hs</h4>
+              </div>
+              <!--EndEvento-->
+              <!--Evento-->
+              <div class="event">
+                <h6>Dpto Vaticano Chico</h6>
+                <h4>15:30hs</h4>
+              </div>
+              <!--EndEvento-->
+            </div>
+          </div>
+          <!--End Day-->
+          <!----------------------------------->
+        </div>
+        <!--End Fila semanal-->
+        <!-------------------------------------------------------------------->
+      </div>
+      <!--End Calendario-->
+    </div>
+    <!--End Contenido Principal-->
+    <!----------------------------------------------------------------------------------------------------------->
+    
+    
     <!--------------------------------------------------------------------------------------->
     <!--Timeline Footer-->
     <section class="timeline bg-blue d-flex align-items-center"  id="timelineFooter">
@@ -405,6 +338,11 @@
     </section>
     <!--End Timeline Footer-->
     <!--------------------------------------------------------------------------------------->
+    
+    <script src="assets/js/sidebar.js"></script>
+
+
+  </body>
 
     <!-- JS -->
     <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -417,3 +355,5 @@
 
 
     <script src="assets/js/main.js"></script>
+
+</html>

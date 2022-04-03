@@ -1,54 +1,102 @@
-@media (max-width:575px) {
-    .display-4 {
-        font-size: 1.5rem;
-    }
-    .day h5 {
-        background-color: #f8f9fa;
-        padding: 3px 5px 5px;
-        margin: -8px -8px 8px -8px;
-    }
-    .date {
-        padding-left: 4px;
-    }
-}
-
-@media (min-width: 576px) {
-    .day {
-        height: 14.2857vw;
-    }
-}
-
-.dayTitle{
-
-}
-
-.day{
-
-}
-
-.event{
-    max-width: 100%;
-    height: 40%;
-    background: #262B44;
-    border-radius: 5px;
-    display: block;
-    color: white;
-    margin-bottom: 5%;
-}
-.event:active{
-    background: #D2232A;
-    color: white;
-}
-.event:hover{
-    background: #D2232A;
-    color: white;
-}
-
-.eventTitle{
+/*-------------------Desktop----------------------------*/
+.calendario{
+    width: 90%;
+    margin-left: 5%;
     text-align: center;
+    position: relative;
+    margin-top: 10px;
+    display: table;
+}
+.daysOfWeeks{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: table-row;
+}
+.dayOfWeekContainer{
+    width: 14.28%;
+    height: 100%;
+    display: table-cell;
+    border: 1px solid #171717;
+}
+.dayLabel{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #171717;
+    color: white;
+    margin: 0;
+}
+.numberDayContainer{
+    text-align: left;
+    padding-left: 5px;
+}
+.eventContainer{
+    width: 100%;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.event{
+    width: calc(90% - 10px);
+    margin-left: calc(5% + 5px);
+    background: #262B44;
+    color: white;
+    border-radius: 10px;
+    margin-top: 5px;
     padding-left: 5px;
     padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
-.eventHours{
-    text-align: center;
+
+/*-------------------Movile----------------------------*/
+@media (max-width: 870px) {
+    .calendario{
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+        position: relative;
+        margin-top: 10px;
+    }
+    .daysOfWeeks{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .dayOfWeekContainer{
+        width: 100%;
+        display: inline;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .dayLabel{
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background: #171717;
+        color: white;
+        margin: 0;
+    }
+    .numberDayContainer{
+        text-align: left;
+        padding-left: 5px;
+    }
+    .eventContainer{
+        width: 100%;
+        position: relative;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .event{
+        width: calc(90% - 10px);
+        margin-left: calc(5% + 5px);
+        color: white;
+        border-radius: 10px;
+        margin-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 }
