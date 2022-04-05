@@ -1,8 +1,57 @@
+.logoutAndProfilePictureContainer{
+  margin-top: 20px;
+  text-align: left;
+}
+#profilePicture{
+  width: 50px;
+  border-radius: 50px;
+}
+#profileName{
+  font-size: 20px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+#logoutLink{
+  color: red;
+  font-size: 12px;
+  margin-top: 0;
+  padding: 0;
+}
+.sidebarToolsContainer{
+  margin-top: 30px;
+}
+.sidebarTools{
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+}
+
+.sidebarTools li{
+  text-align: left;
+}
+.sidebarTools li a{
+  color: black;
+}
+.sidebarToolsTextLarge{
+  font-size: 13px;
+}
+.btnSidebarBuscarMasPropiedades{
+  background: #262a43;
+  font-size: 11px;
+  text-align: center;
+  width: 150px;
+  margin-left: 40px;  
+}
+.sidebarContent{
+  padding-bottom: 100px;
+}
+
 /* The sidepanel menu */
 @media (max-width: 1200px) {
   .sidepanel {
-      min-height: 100%;
       width: 0; /* 0 width - change this with JavaScript */
+      min-height: 100%;
       position: absolute; /* Stay in place */
       z-index: 1; /* Stay on top */
       top: 0;
@@ -38,6 +87,7 @@
 
     /* Style the button that is used to open the sidepanel */
     .openbtn {
+      position: relative;
       font-size: 20px;
       cursor: pointer;
       background-color: #f8f9fa;
@@ -48,6 +98,7 @@
     }
     .sidebarOpenBtnIcon{
         position: absolute;
+        top: 10px;
         left: 20px;
         font-size: 40px;
     }
@@ -62,6 +113,7 @@
   .sidebarContent{
       margin-left: 15px;
       margin-right: 15px;
+      background-color: #f8f9fa;
       /*Toma automaticamente el width*/
   }
 
@@ -94,6 +146,17 @@
       margin: 0;
   }
 
+  .btnSidebar{
+    position: relative;
+    font-size: 1px;
+    text-align: center;
+  }
+
+  .mainContent{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
 }
 
 /*En mobile el boton del sidebar desaparece y aparece el
@@ -106,6 +169,7 @@ sidebar todo el tiempo*/
     left: 0;
     bottom: 0;
     width: 250px;
+    min-height: 150%;
     padding-top: 10px;
     padding-left: 10px;
     background-color: #f8f9fa;
