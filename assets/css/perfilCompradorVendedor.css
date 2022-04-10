@@ -192,6 +192,28 @@ body{
     bottom: 0;
     right: 0;
 }
+@media(max-width: 1625px){
+    .proximamenteImg{
+        height: 300px;
+    }
+}
+@media(max-width: 1470px){
+    .proximamenteImg{
+        height: 250px;
+    }
+}
+
+@media(max-width: 509px){
+    .proximamenteImg{
+        height: 200px;
+    }
+}
+
+@media(max-width: 452px){
+    .proximamenteImg{
+        height: 150px;
+    }
+}
 
 .proximamenteImgText{
     color: white;
@@ -360,3 +382,8 @@ luego (lineaDeTiempoLine que es la linea) y luego el texto*/
 }
 
 
+@media (max-width: 1090px){
+    .no-mobile{
+        display: none;
+    }
+}

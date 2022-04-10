@@ -1,3 +1,7 @@
+body{
+  padding-bottom: 200px !important;
+}
+
 .logoutAndProfilePictureContainer{
   margin-top: 20px;
   text-align: left;
@@ -41,7 +45,7 @@
   font-size: 11px;
   text-align: center;
   width: 150px;
-  margin-left: 40px;  
+  margin-left: 40px; 
 }
 .sidebarContent{
   padding-bottom: 100px;
@@ -53,7 +57,7 @@
       width: 0; /* 0 width - change this with JavaScript */
       min-height: 100%;
       position: absolute; /* Stay in place */
-      z-index: 1; /* Stay on top */
+      z-index: 4; /* Stay on top */
       top: 0;
       left: 0;
       background-color: #f8f9fa;
@@ -155,6 +159,14 @@
   .mainContent{
     padding-left: 25px;
     padding-right: 25px;
+  }
+
+  .btnSidebarBuscarMasPropiedades{
+    font-size: 10px !important;
+    text-align: center;
+    padding: 0px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
   }
 
 }
