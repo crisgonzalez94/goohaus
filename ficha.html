@@ -23,6 +23,62 @@
     <!--Responsive-->
     <link rel="stylesheet" href="assets/css/fichaResponsive.css">
 
+    <!--Swipper Js-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!-- Demo styles -->
+    <style>
+      .swiperContainer {
+        position: relative;
+        height: 100%;
+        z-index: 0;
+      }
+
+      .swiperContainer {
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        height: fit-content;
+        margin-bottom: 30px;
+      }
+
+      .swiper {
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+
+      .swiper-slide {
+        width: fit-content;
+        height: fit-content;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+
+      .swiper-slide img {
+        max-height: 500px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+      @media(max-width: 1239px){
+        .swiper-slide img {
+          max-height: 400px;
+        }
+      }
+      @media(max-width: 915px){
+        .swiper-slide img {
+          max-height: 300px;
+        }
+      }
+      @media(max-width: 707px){
+        .swiper-slide img {
+          max-height: 200px;
+        }
+      }
+
+    </style>
+
+
     <title>GOOHAUS</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
   </head>
@@ -179,27 +235,56 @@
       
     </div>
 
-    <section class="container-fluid mb-40">
-      <div class="heroFicha__slider" id="fichaSlide">
+    <!------------------------------------------------------------------------>
+    <!--Carousel principal-->
+    <section class="container-fluid mb-40 swiperContainer">
 
-        <div class="heroFicha__slider__slide">
-          <img src="./assets/img/slide-ficha-1.jpg" class="img-fluid" alt="">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/img/slide-ficha-1.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/img/slide-ficha-2.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/img/slide-ficha-3.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/img/slide-ficha-4.jpg" alt="">
+          </div>
         </div>
-
-        <div class="heroFicha__slider__slide">
-          <img src="./assets/img/slide-ficha-1.jpg" class="img-fluid" alt="">
-        </div>
-
+        <div class="swiper-pagination"></div>
       </div>
+  
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: "auto",
+          spaceBetween: 30,
+          loop: true,
+          /*
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          */
+        });
+      </script>
+
     </section>
+    <!--End principal-->
+    <!------------------------------------------------------------------------>
+    
 
 
     <div class="container-fluid">
       <div class="row">
 
         <!------------------------------------------------------------------------------------>
-        <!--Aca va-->
-
 
         <div class="col-md-9">
 
