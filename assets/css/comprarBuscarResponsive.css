@@ -13,6 +13,13 @@
     text-align: left;
 }
 
+
+.houseFichaBtnVerBtnAgentarContainer{
+    margin-right: 30px;
+    background: blue;
+    color: green;
+}
+
 /*-----------------------------------------------------------------------------------------*/
 /*Elementos de l esteper de la vista comprar*/
 @media(max-width: 600px){
