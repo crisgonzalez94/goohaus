@@ -25,58 +25,7 @@
 
     <!--Swipper Js-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-
-    <!-- Demo styles -->
-    <style>
-      .swiperContainer {
-        position: relative;
-        height: 100%;
-        z-index: 0;
-      }
-
-      .swiperContainer {
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-        height: fit-content;
-        margin-bottom: 30px;
-      }
-
-      .swiper {
-        padding-bottom: 0;
-        margin-bottom: 0;
-      }
-
-      .swiper-slide {
-        width: fit-content;
-        height: fit-content;
-        padding-bottom: 0;
-        margin-bottom: 0;
-      }
-
-      .swiper-slide img {
-        max-height: 500px;
-        padding-bottom: 0;
-        margin-bottom: 0;
-      }
-      @media(max-width: 1239px){
-        .swiper-slide img {
-          max-height: 400px;
-        }
-      }
-      @media(max-width: 915px){
-        .swiper-slide img {
-          max-height: 300px;
-        }
-      }
-      @media(max-width: 707px){
-        .swiper-slide img {
-          max-height: 200px;
-        }
-      }
-
-    </style>
+    <link rel="stylesheet" href="assets/css/fichaCarousel.css">
 
 
     <title>GOOHAUS</title>
@@ -237,7 +186,7 @@
 
     <!------------------------------------------------------------------------>
     <!--Carousel principal-->
-    <section class="container-fluid mb-40 swiperContainer">
+    <section class="container-fluid mb-40 swiperContainer position-relative">
 
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -256,24 +205,6 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
-  
-      <!-- Swiper JS -->
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  
-      <!-- Initialize Swiper -->
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: "auto",
-          spaceBetween: 30,
-          loop: true,
-          /*
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          */
-        });
-      </script>
 
     </section>
     <!--End principal-->
@@ -318,9 +249,9 @@
                 </article>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-md-7">
                 <div class="fichaMap h-100">
-                  <iframe class="h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26638.96249601387!2d-70.62675944847435!3d-33.42662531995215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf7c6e8366f7%3A0x87effcc00a478d7c!2sProvidencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1645646264437!5m2!1ses!2scl" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  <iframe class="h-100 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26638.96249601387!2d-70.62675944847435!3d-33.42662531995215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf7c6e8366f7%3A0x87effcc00a478d7c!2sProvidencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1645646264437!5m2!1ses!2scl" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
               </div>
 
@@ -756,7 +687,7 @@
 
         <!---------------------------------------------------------------------------------------------------->
         <!--Me interesa-->
-        <div class="col-md-3 fichaMeInteresaBox">
+        <div class="col-md-3 col-lg-3 fichaMeInteresaBox">
           <aside class="fichaAside sticky-top">
             <article class="bg-pink p-24">
               <h3 class="mb-4"><strong>¡Me interesa!</strong></h3>
@@ -774,25 +705,17 @@
             <h3 class="mb-3 mt-3 fichaNotResponsive">¿Por qué <strong>GOOHAUS</strong>?</h3>
 
             <ul class="list-unstyled  fichaNotResponsive">
+
+              <li class="d-flex align-items-center">
+                <img src="./assets/img/ico-docs-2.svg" alt="" class="me-2" style="max-width:10%;">
+                <h5 >Menos papeleo</h5>
+              </li>
+
               <li class="d-flex align-items-center">
                 <img src="./assets/img/ico-idea-blue.svg" alt="" class="me-2" style="max-width:10%;">
-                <h5>Decisiones informadas</h5>
+                <h5>Nueva experiencia de compra</h5>
               </li>
 
-              <li class="d-flex align-items-center">
-                <img src="./assets/img/ico-savings-blue.svg" alt="" class="me-2" style="max-width:10%;">
-                <h5 >Tarifa única, la mas baja del mercado</h5>
-              </li>
-
-              <li class="d-flex align-items-center">
-                <img src="./assets/img/ico-conections-blue.svg" alt="" class="me-2" style="max-width:10%;">
-                <h5>Evita el desfase, no mas intermediarios</h5>
-              </li>
-
-              <li class="d-flex align-items-center">
-                <img src="./assets/img/ico-asesor-blue.svg" alt="" class="me-2" style="max-width:10%;">
-                <h5>Acompañamiento con ejecutivos capacitados</h5>
-              </li>
             </ul>
           </aside> 
         </div>
@@ -862,6 +785,13 @@
       </div>
 
     </footer>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="assets/js/fichaCarousel.js"></script>
 
 
     <!-- JS -->

@@ -3,57 +3,9 @@
 }
 
 /*-------------------------------------------------*/
-/*-------------------------------------------------------------------------*/
-/*Carausel*/
-.swiperContainer {
-    position: relative;
-    height: 100%;
-    z-index: 0;
-  }
-
-  .swiperContainer {
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-    height: fit-content;
-    margin-bottom: 30px;
-  }
-
-  .swiper {
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-
-  .swiper-slide {
-    width: fit-content;
-    height: fit-content;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-
-  .swiper-slide img {
-    max-height: 500px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-  @media(max-width: 1239px){
-    .swiper-slide img {
-      max-height: 400px;
-    }
-  }
-  @media(max-width: 915px){
-    .swiper-slide img {
-      max-height: 300px;
-    }
-  }
-  @media(max-width: 707px){
-    .swiper-slide img {
-      max-height: 200px;
-    }
-  }
-
-
+.fichaTitle{
+    font-size: 35px;
+}
 
 @media(max-width: 911px){
     .fichaTitle{
@@ -185,5 +137,3 @@
         font-size: 25px;
     }
 }
-
-

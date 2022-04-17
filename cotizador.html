@@ -175,23 +175,40 @@
 
             <div class="row">
 
+              <!------------------------------------------------------------------------------------>
+              <!--Checkbox-->
               <div class="form-group mb-4 col-md-12">
                 <label class="w-100">Tipo de propiedad</label>
-                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-                <label class="btn btn--check" for="option1">Departamento</label>
+                
+                <!--NO CAMBIAR EL id DE ESTE ELEMENTO!!!!!!!!-->
+                <input type="radio" class="btn-check" name="departamento" value="departamento" id="tipoDePropiedadOption1" autocomplete="off">
+                <!--NO CAMBIAR EL for NI id DE ESTE ELEMENTO!!!!!!!!-->
+                <label class="btn btn--check" for="tipoDePropiedadOption1" id="labelTipoDePropiedadOption1">Departamento</label>
 
-                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                <label class="btn btn--check" for="option2">Casa</label>
+                <!--NO CAMBIAR EL id DE ESTE ELEMENTO!!!!!!!!-->
+                <input type="radio" class="btn-check" name="casa" value="casa" id="tipoDePropiedadOption2" autocomplete="off">
+                <!--NO CAMBIAR EL for NI id DE ESTE ELEMENTO!!!!!!!!-->
+                <label class="btn btn--check" for="tipoDePropiedadOption2" id="labelTipoDePropiedadOption2">Casa</label>
+
+
               </div>
+              <!--Checkbox-->
+              <!------------------------------------------------------------------------------------>
+
 
 
               <div class="form-group mb-4 col-md-12">
                 <label class="w-100">Estacionamientos</label>
-                <input type="radio" class="btn-check" name="options" id="si-1" autocomplete="off" checked>
-                <label class="btn btn--check" for="si-1">Si</label>
 
-                <input type="radio" class="btn-check" name="options" id="no-1" autocomplete="off">
-                <label class="btn btn--check" for="no-1">No</label>
+                <!--NO CAMBIAR EL id DE ESTE ELEMENTO!!!!!!!!-->
+                <input type="radio" class="btn-check" name="si" value="si" id="si-1" autocomplete="on" checked>
+                <!--NO CAMBIAR EL for NI id DE ESTE ELEMENTO!!!!!!!!-->
+                <label class="btn btn--check" for="si-1" id="labelSi-1">Si</label>
+
+                <!--NO CAMBIAR EL id DE ESTE ELEMENTO!!!!!!!!-->
+                <input type="radio" class="btn-check" name="no" value="no" id="no-1" autocomplete="off">
+                <!--NO CAMBIAR EL for NI id DE ESTE ELEMENTO!!!!!!!!-->
+                <label class="btn btn--check" for="no-1" id="labelNo-1">No</label>
 
               </div>
             </div>
@@ -409,6 +426,10 @@
     </footer>
     <!--End Responsive Footer-->
     <!------------------------------------------------------------------------------------->
+
+
+    <!--Controlador de los radio buttons-->
+    <script src="assets/js/cotizadorToggleEvent.js"></script>
 
     <!-- JS -->
     <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>

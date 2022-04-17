@@ -230,6 +230,14 @@ ul li{
     color: var(--pink);
 }
 
+/*Esta clase sera activada mediante los toggle events de JavaScript*/
+.btnCheckActive{
+    outline: 0;
+    box-shadow: none;
+    background: var(--red);
+    color: var(--pink);
+}
+
 .btnGroup .btn:first-child{
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
